@@ -9,7 +9,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 
 
-public class MainActivity extends Activity implements AnimationListener{
+public class MainActivity extends Activity implements AnimationListener {
 
     Animation animWelcome;
     FrameLayout container;
@@ -21,7 +21,7 @@ public class MainActivity extends Activity implements AnimationListener{
         animWelcome = AnimationUtils.loadAnimation(getApplicationContext(),
                 R.anim.welcome_animation);
         animWelcome.setAnimationListener(this);
-        container = (FrameLayout)(findViewById(R.id.welcomeContainer));
+        container = (FrameLayout) (findViewById(R.id.welcomeContainer));
         container.startAnimation(animWelcome);
     }
 
@@ -32,7 +32,7 @@ public class MainActivity extends Activity implements AnimationListener{
         // check for fade in animation
         if (animation == animWelcome) {
             //Toast.makeText(getApplicationContext(), "Animation Stopped",Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(getApplicationContext(),universeActivity.class);
+            Intent intent = new Intent(getApplicationContext(), universeActivity.class);
             startActivity(intent);
         }
 
