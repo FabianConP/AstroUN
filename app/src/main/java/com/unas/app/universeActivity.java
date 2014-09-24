@@ -48,14 +48,6 @@ public class universeActivity extends Activity implements AnimationListener {
         if (scale - 1 >= 0) {
             btZoomOut.setVisibility(View.VISIBLE);
 
-            if (scale % 2 == 0) {
-                imageFront = (ImageView) (findViewById(R.id.first));
-                imageBack = (ImageView) (findViewById(R.id.second));
-            } else {
-                imageBack = (ImageView) (findViewById(R.id.first));
-                imageFront = (ImageView) (findViewById(R.id.second));
-            }
-
             imageFront.setImageResource(powersImage[scale]);
             imageBack.setImageResource(powersImage[scale - 1]);
 
@@ -75,14 +67,6 @@ public class universeActivity extends Activity implements AnimationListener {
     public void onClickZoomOut(View v) {
         if (scale + 1 < powersImage.length) {
             btZoomIn.setVisibility(View.VISIBLE);
-
-            if (scale % 2 == 0) {
-                imageFront = (ImageView) (findViewById(R.id.first));
-                imageBack = (ImageView) (findViewById(R.id.second));
-            } else {
-                imageBack = (ImageView) (findViewById(R.id.first));
-                imageFront = (ImageView) (findViewById(R.id.second));
-            }
 
             imageFront.setImageResource(powersImage[scale]);
             imageBack.setImageResource(powersImage[scale + 1]);
