@@ -16,7 +16,8 @@ public class universeActivity extends Activity implements AnimationListener {
             R.drawable.pot7,
             R.drawable.pot8,
             R.drawable.pot9,
-            R.drawable.pot10
+            R.drawable.pot10,
+            R.drawable.pot11
     };
 
     Animation scaleFront;
