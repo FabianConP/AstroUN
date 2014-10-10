@@ -22,6 +22,11 @@
             android:label="@string/title_activity_universe"
             android:screenOrientation="landscape" >
         </activity>
+        <activity
+            android:name="com.unas.app.infoActivity"
+            android:label="@string/title_activity_info"
+            android:screenOrientation="landscape" >
+        </activity>
     </application>
 
 </manifest>

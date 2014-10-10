@@ -1,0 +1,81 @@
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1.0">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.0"
+        android:layout_weight="0.1">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etSearch"
+            android:layout_weight="0.95"
+            android:textIsSelectable="true"
+            android:hint="Nombre del objeto" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ibSearch"
+                android:layout_weight="0.1"
+                android:background="@drawable/abc_ic_search"
+                android:layout_gravity="center"
+                android:adjustViewBounds="false" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:weightSum="1.0"
+        android:minHeight="50sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/range"
+            android:id="@+id/tvInfoRange"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.1"
+            android:typeface="serif"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tvValueRange"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.9" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvElements" />
+    </LinearLayout>
+
+</LinearLayout>
