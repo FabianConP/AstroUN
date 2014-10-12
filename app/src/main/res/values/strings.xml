@@ -7,4 +7,39 @@
     <string name="title_activity_universe">universeActivity</string>
     <string name="title_activity_info">infoActivity</string>
     <string name="range">Range</string>
+
+    <string-array name="scales">
+        <item>10-12</item>
+        <item>12-14</item>
+        <item>14-16</item>
+        <item>16-18</item>
+    </string-array>
+    
+    <string-array name="ind_0">
+        <item>Earth*http://en.m.wikipedia.org/wiki/Earth*map</item>
+        <item>Mars*http://en.m.wikipedia.org/wiki/Mars*map</item>
+        <item>Mercury*http://en.m.wikipedia.org/wiki/Mercury_(planet)*map</item>
+        <item>Moon*http://en.m.wikipedia.org/wiki/Moon*map</item>
+        <item>Titan*http://en.m.wikipedia.org/wiki/Titan_(moon)*map</item>
+        <item>Venus*http://en.m.wikipedia.org/wiki/Venus*map</item>
+    </string-array>
+    <string-array name="ind_1">
+        <item>Jupiter*http://en.m.wikipedia.org/wiki/Jupiter*map</item>
+        <item>Neptune*http://en.m.wikipedia.org/wiki/Neptune*map</item>
+        <item>Saturn*http://en.m.wikipedia.org/wiki/Saturn*map</item>
+        <item>Uranus*http://en.m.wikipedia.org/wiki/Uranus*map</item>
+    </string-array>
+    <string-array name="ind_2">
+        <item>Alpha Centauri A*http://en.m.wikipedia.org/wiki/Alpha_Centauri*map</item>
+        <item>Alpha Centauri B*http://en.m.wikipedia.org/wiki/Alpha_Centauri*map</item>
+        <item>Gliese 229A*None*map</item>
+        <item>Sun*http://en.m.wikipedia.org/wiki/Sun*map</item>
+    </string-array>
+    <string-array name="ind_3">
+        <item>Altair*http://en.m.wikipedia.org/wiki/Altair*map</item>
+        <item>Capella*http://en.m.wikipedia.org/wiki/Capella*map</item>
+        <item>Pollux*http://en.m.wikipedia.org/wiki/Pollux_(star)*map</item>
+        <item>Regulus*http://en.m.wikipedia.org/wiki/Regulus*map</item>
+        <item>Vega*http://en.m.wikipedia.org/wiki/Vega*map</item>
+    </string-array>
 </resources>
