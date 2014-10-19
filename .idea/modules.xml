@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AstroUN.iml" filepath="$PROJECT_DIR$/AstroUN.iml" />
       <module fileurl="file://$PROJECT_DIR$/Unas.iml" filepath="$PROJECT_DIR$/Unas.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
