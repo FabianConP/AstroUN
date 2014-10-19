@@ -4,21 +4,21 @@ public class Element {
     private int id;
     private String name;
     private String wikiLink;
-    private String mapsLink;
+    private String imagesLink;
 
-    public Element(int id, String info){
+    public Element(int id, String info) {
         String[] data = info.split("\\*");
         this.id = id;
         this.name = data[0];
         this.wikiLink = data[1];
-        this.mapsLink = data[2];
+        this.imagesLink = name.replaceAll("\\s", "+");
     }
 
-    public Element(int id, String name, String wikiLink, String mapsLink) {
+    public Element(int id, String name, String wikiLink) {
         this.id = id;
         this.name = name;
         this.wikiLink = wikiLink;
-        this.mapsLink = mapsLink;
+        this.imagesLink = name.replaceAll("\\s", "+");
     }
 
     public int getId() {
@@ -45,12 +45,8 @@ public class Element {
         this.wikiLink = wikiLink;
     }
 
-    public String getMapsLink() {
-        return mapsLink;
-    }
-
-    public void setMapsLink(String mapsLink) {
-        this.mapsLink = mapsLink;
+    public String getImagesLink() {
+        return "http://images.google.com/search?tbm=isch&q=" + imagesLink;
     }
 
     @Override
@@ -59,7 +55,7 @@ public class Element {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", wikiLink='" + wikiLink + '\'' +
-                ", mapsLink='" + mapsLink + '\'' +
+                ", imagesLink='" + getImagesLink() + '\'' +
                 '}';
     }
 }

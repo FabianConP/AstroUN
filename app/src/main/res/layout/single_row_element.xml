@@ -1,72 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="50dp">
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:weightSum="1.0">
 
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:layout_weight="0.1">
-
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:id="@+id/ibDetail"
-            android:focusableInTouchMode="false"
-            android:background="@drawable/eye"
-            android:layout_gravity="center" />
-    </FrameLayout>
+    <ImageButton
+        android:id="@+id/ibDetail"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@drawable/detail"
+        android:focusableInTouchMode="false" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
         android:id="@+id/tvName"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
         android:layout_weight="0.8"
-        android:textAlignment="center"
-        android:typeface="serif"
-        android:textSize="30sp" />
+        android:gravity="left|center"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        android:typeface="normal" />
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:layout_weight="0.1"
-        android:weightSum="1.0">
+    <ImageButton
+        android:id="@+id/ibWiki"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="false"
+        android:background="@drawable/wikipedia" />
 
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_weight="0.5">
-
-            <ImageButton
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:id="@+id/ibWiki"
-                android:background="@drawable/wikipedia"
-                android:adjustViewBounds="false"
-                android:layout_weight="10.1"
-                android:layout_gravity="center" />
-
-        </FrameLayout>
-
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_weight="0.5"
-            android:id="@+id/frameLayout">
-
-            <ImageButton
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:id="@+id/ibMap"
-                android:background="@drawable/map"
-                android:adjustViewBounds="false"
-                android:layout_weight="10.1"
-                android:layout_gravity="center" />
-        </FrameLayout>
-    </LinearLayout>
+    <ImageButton
+        android:id="@+id/ibImages"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="false"
+        android:background="@drawable/images" />
 
 </LinearLayout>
