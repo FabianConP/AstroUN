@@ -3,6 +3,7 @@ package com.unas.app;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -23,10 +24,54 @@ import modelo.Element;
 
 public class infoActivity extends Activity {
 
-    private static final int[] ARRAY_ELEMENTS_ID = {R.array.ind_0,R.array.ind_1,R.array.ind_2,R.array.ind_3};
+    public static final String MyPREFERENCES = "MyPrefs";
+    public static final String LAST_SCALE = "lastScale";
+    private static final int[] ARRAY_ELEMENTS_ID = {R.array.ind_n22,
+            R.array.ind_n20,
+            R.array.ind_n19,
+            R.array.ind_n18,
+            R.array.ind_n15,
+            R.array.ind_n14,
+            R.array.ind_n11,
+            R.array.ind_n10,
+            R.array.ind_n9,
+            R.array.ind_n8,
+            R.array.ind_n7,
+            R.array.ind_n6,
+            R.array.ind_n5,
+            R.array.ind_n4,
+            R.array.ind_n3,
+            R.array.ind_n2,
+            R.array.ind_n1,
+            R.array.ind_0,
+            R.array.ind_1,
+            R.array.ind_2,
+            R.array.ind_3,
+            R.array.ind_4,
+            R.array.ind_5,
+            R.array.ind_6,
+            R.array.ind_7,
+            R.array.ind_8,
+            R.array.ind_9,
+            R.array.ind_10,
+            R.array.ind_11,
+            R.array.ind_12,
+            R.array.ind_13,
+            R.array.ind_14,
+            R.array.ind_15,
+            R.array.ind_16,
+            R.array.ind_17,
+            R.array.ind_18,
+            R.array.ind_19,
+            R.array.ind_20,
+            R.array.ind_21,
+            R.array.ind_22,
+            R.array.ind_23,
+            R.array.ind_24,
+            R.array.ind_25,
+            R.array.ind_26};
     public static int scale;
     private static String[] ARRAY_SCALE_NAME;
-
     private static SeekBar sbRange;
     private static TextView tvValueRange;
     private static ListView lvElements;
@@ -66,8 +111,7 @@ public class infoActivity extends Activity {
 
         ARRAY_SCALE_NAME = getResources().getStringArray(R.array.scales);
 
-        Intent intent = getIntent();
-        scale = intent.getIntExtra("SCALE", 0);
+        scale = getScale();
 
         updateElements(getApplicationContext());
 
@@ -77,6 +121,7 @@ public class infoActivity extends Activity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 scale = progress;
+                setScale(scale);
                 updateElements(getApplicationContext());
             }
 
@@ -92,8 +137,20 @@ public class infoActivity extends Activity {
         });
     }
 
+    private int getScale() {
+        SharedPreferences sharedPref = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        return sharedPref.getInt(LAST_SCALE, 0);
+    }
+
+    private void setScale(int scale) {
+        SharedPreferences sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedpreferences.edit();
+        editor.putInt(LAST_SCALE, scale);
+        editor.commit();
+    }
+
     private void updateElements(Context context) {
-        tvValueRange.setText(performRange(context, ARRAY_SCALE_NAME[scale]));
+        tvValueRange.setText(ARRAY_SCALE_NAME[scale]);
         lvElements.setAdapter(new ElementBaseAdapter(context, getElements(context)));
     }
 

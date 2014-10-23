@@ -89,7 +89,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:onClick="onClickInfo"
-            android:src="@drawable/pot8" />
+            android:src="@drawable/potn22" />
 
         <ImageView
             android:id="@+id/first"
@@ -97,7 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:onClick="onClickInfo"
-            android:src="@drawable/pot7" />
+            android:src="@drawable/potn22" />
 
     </FrameLayout>
 

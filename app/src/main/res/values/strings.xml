@@ -10,37 +10,197 @@
     <string name="to">to</string>
 
     <string-array name="scales">
-        <item>10-12</item>
-        <item>12-14</item>
-        <item>14-16</item>
-        <item>16-18</item>
+        <item>10^-22</item>
+        <item>10^-20</item>
+        <item>10^-19</item>
+        <item>10^-18</item>
+        <item>10^-15</item>
+        <item>10^-14</item>
+        <item>10^-11</item>
+        <item>10^-10</item>
+        <item>10^-9</item>
+        <item>10^-8</item>
+        <item>10^-7</item>
+        <item>10^-6</item>
+        <item>10^-5</item>
+        <item>10^-4</item>
+        <item>10^-3</item>
+        <item>10^-2</item>
+        <item>10^-1</item>
+        <item>10^0</item>
+        <item>10^1</item>
+        <item>10^2</item>
+        <item>10^3</item>
+        <item>10^4</item>
+        <item>10^5</item>
+        <item>10^6</item>
+        <item>10^7</item>
+        <item>10^8</item>
+        <item>10^9</item>
+        <item>10^10</item>
+        <item>10^11</item>
+        <item>10^12</item>
+        <item>10^13</item>
+        <item>10^14</item>
+        <item>10^15</item>
+        <item>10^16</item>
+        <item>10^17</item>
+        <item>10^18</item>
+        <item>10^19</item>
+        <item>10^20</item>
+        <item>10^21</item>
+        <item>10^22</item>
+        <item>10^23</item>
+        <item>10^24</item>
+        <item>10^25</item>
+        <item>10^26</item>
     </string-array>
 
+    <string-array name="ind_n22">
+
+    </string-array>
+    <string-array name="ind_n20">
+
+    </string-array>
+    <string-array name="ind_n19">
+
+    </string-array>
+    <string-array name="ind_n18">
+
+    </string-array>
+    <string-array name="ind_n15">
+
+    </string-array>
+    <string-array name="ind_n14">
+
+    </string-array>
+    <string-array name="ind_n11">
+
+    </string-array>
+    <string-array name="ind_n10">
+
+    </string-array>
+    <string-array name="ind_n9">
+
+    </string-array>
+    <string-array name="ind_n8">
+
+    </string-array>
+    <string-array name="ind_n7">
+
+    </string-array>
+    <string-array name="ind_n6">
+
+    </string-array>
+    <string-array name="ind_n5">
+
+    </string-array>
+    <string-array name="ind_n4">
+
+    </string-array>
+    <string-array name="ind_n3">
+
+    </string-array>
+    <string-array name="ind_n2">
+
+    </string-array>
+    <string-array name="ind_n1">
+
+    </string-array>
     <string-array name="ind_0">
-        <item>Earth*http://en.m.wikipedia.org/wiki/Earth</item>
+
+    </string-array>
+    <string-array name="ind_1">
+
+    </string-array>
+    <string-array name="ind_2">
+
+    </string-array>
+    <string-array name="ind_3">
+
+    </string-array>
+    <string-array name="ind_4">
+
+    </string-array>
+    <string-array name="ind_5">
+
+    </string-array>
+    <string-array name="ind_6">
+
+    </string-array>
+    <string-array name="ind_7">
+    <item>Earth*http://en.m.wikipedia.org/wiki/Earth</item>
         <item>Mars*http://en.m.wikipedia.org/wiki/Mars</item>
         <item>Mercury*http://en.m.wikipedia.org/wiki/Mercury_(planet)</item>
         <item>Moon*http://en.m.wikipedia.org/wiki/Moon</item>
         <item>Titan*http://en.m.wikipedia.org/wiki/Titan_(moon)</item>
         <item>Venus*http://en.m.wikipedia.org/wiki/Venus</item>
     </string-array>
-    <string-array name="ind_1">
-        <item>Jupiter*http://en.m.wikipedia.org/wiki/Jupiter</item>
+    <string-array name="ind_8">
+    <item>Jupiter*http://en.m.wikipedia.org/wiki/Jupiter</item>
         <item>Neptune*http://en.m.wikipedia.org/wiki/Neptune</item>
         <item>Saturn*http://en.m.wikipedia.org/wiki/Saturn</item>
         <item>Uranus*http://en.m.wikipedia.org/wiki/Uranus</item>
     </string-array>
-    <string-array name="ind_2">
-        <item>Alpha Centauri A*http://en.m.wikipedia.org/wiki/Alpha_Centauri</item>
+    <string-array name="ind_9">
+    <item>Alpha Centauri A*http://en.m.wikipedia.org/wiki/Alpha_Centauri</item>
         <item>Alpha Centauri B*http://en.m.wikipedia.org/wiki/Alpha_Centauri</item>
         <item>Gliese 229A*http://en.wikipedia.org/wiki/Gliese_Catalogue_of_Nearby_Stars</item>
         <item>Sun*http://en.m.wikipedia.org/wiki/Sun</item>
     </string-array>
-    <string-array name="ind_3">
-        <item>Altair*http://en.m.wikipedia.org/wiki/Altair</item>
+    <string-array name="ind_10">
+    <item>Altair*http://en.m.wikipedia.org/wiki/Altair</item>
         <item>Capella*http://en.m.wikipedia.org/wiki/Capella</item>
         <item>Pollux*http://en.m.wikipedia.org/wiki/Pollux_(star)</item>
         <item>Regulus*http://en.m.wikipedia.org/wiki/Regulus</item>
         <item>Vega*http://en.m.wikipedia.org/wiki/Vega</item>
+    </string-array>
+    <string-array name="ind_11">
+
+    </string-array>
+    <string-array name="ind_12">
+
+    </string-array>
+    <string-array name="ind_13">
+
+    </string-array>
+    <string-array name="ind_14">
+
+    </string-array>
+    <string-array name="ind_15">
+
+    </string-array>
+    <string-array name="ind_16">
+
+    </string-array>
+    <string-array name="ind_17">
+
+    </string-array>
+    <string-array name="ind_18">
+
+    </string-array>
+    <string-array name="ind_19">
+
+    </string-array>
+    <string-array name="ind_20">
+
+    </string-array>
+    <string-array name="ind_21">
+
+    </string-array>
+    <string-array name="ind_22">
+
+    </string-array>
+    <string-array name="ind_23">
+
+    </string-array>
+    <string-array name="ind_24">
+
+    </string-array>
+    <string-array name="ind_25">
+
+    </string-array>
+    <string-array name="ind_26">
+
     </string-array>
 </resources>

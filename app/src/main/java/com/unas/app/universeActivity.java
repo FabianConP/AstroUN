@@ -1,7 +1,9 @@
 package com.unas.app;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -15,6 +17,8 @@ import android.widget.ImageView;
 
 public class universeActivity extends Activity implements AnimationListener {
 
+    public static final String MyPREFERENCES = "MyPrefs";
+    public static final String LAST_SCALE = "lastScale";
     int[] powersImage = {
             R.drawable.potn22,
             R.drawable.potn20,
@@ -61,13 +65,11 @@ public class universeActivity extends Activity implements AnimationListener {
             R.drawable.pot25,
             R.drawable.pot26
     };
-
     Animation scaleFront;
     Animation scaleBack;
     ImageView imageFront;
     ImageView imageBack;
     int scale = 0;
-
     Button btZoomIn;
     Button btZoomOut;
     Button btInfo;
@@ -85,12 +87,14 @@ public class universeActivity extends Activity implements AnimationListener {
         btZoomIn = (Button) (findViewById(R.id.btZoomIn));
         btZoomOut = (Button) (findViewById(R.id.btZoomOut));
         btInfo = (Button) (findViewById(R.id.btInfo));
-        scale = 0;
+
+        scale = getScale();
 
         imageFront = (ImageView) (findViewById(R.id.first));
         imageBack = (ImageView) (findViewById(R.id.second));
 
         imageFront.setImageResource(powersImage[scale]);
+        imageBack.setImageResource(powersImage[scale]);
     }
 
     public void onClickZoomIn(View v) {
@@ -111,6 +115,7 @@ public class universeActivity extends Activity implements AnimationListener {
             if (scale == 0)
                 btZoomIn.setVisibility(View.INVISIBLE);
         }
+        setScale(scale);
     }
 
     public void onClickZoomOut(View v) {
@@ -131,6 +136,19 @@ public class universeActivity extends Activity implements AnimationListener {
             if (scale + 1 == powersImage.length)
                 btZoomOut.setVisibility(View.INVISIBLE);
         }
+        setScale(scale);
+    }
+
+    private int getScale() {
+        SharedPreferences sharedPref = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        return sharedPref.getInt(LAST_SCALE, 0);
+    }
+
+    private void setScale(int scale) {
+        SharedPreferences sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedpreferences.edit();
+        editor.putInt(LAST_SCALE, scale);
+        editor.commit();
     }
 
     public void onClickInfo(View v){
@@ -138,6 +156,25 @@ public class universeActivity extends Activity implements AnimationListener {
         intent.putExtra("SCALE", scale);
         startActivity(intent);
 
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();  // Always call the superclass method first
+
+        scale = getScale();
+        imageFront.setImageResource(powersImage[scale]);
+        imageBack.setImageResource(powersImage[scale]);
+
+        if (scale == 0)
+            btZoomIn.setVisibility(View.INVISIBLE);
+        else
+            btZoomIn.setVisibility(View.VISIBLE);
+
+        if (scale + 1 == powersImage.length)
+            btZoomOut.setVisibility(View.INVISIBLE);
+        else
+            btZoomOut.setVisibility(View.VISIBLE);
     }
 
     @Override
