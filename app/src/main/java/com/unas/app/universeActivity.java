@@ -151,9 +151,8 @@ public class universeActivity extends Activity implements AnimationListener {
         editor.commit();
     }
 
-    public void onClickInfo(View v){
-        Intent intent = new Intent(getApplication(),infoActivity.class);
-        intent.putExtra("SCALE", scale);
+    public void onClickInfo(View v) {
+        Intent intent = new Intent(getApplication(), infoActivity.class);
         startActivity(intent);
 
     }

@@ -154,6 +154,11 @@ public class infoActivity extends Activity {
         lvElements.setAdapter(new ElementBaseAdapter(context, getElements(context)));
     }
 
+    public void onClickGoogleMaps(View view) {
+        Intent intent = new Intent(getApplication(), GoogleMapsActivity.class);
+        startActivity(intent);
+    }
+
     static class ViewHolder {
         ImageButton ibDetailElement;
         TextView tvNameElement;
@@ -202,22 +207,22 @@ public class infoActivity extends Activity {
                 holder = (ViewHolder) convertView.getTag();
             }
 
-            Element theElement  = elementList.get(position);
+            Element theElement = elementList.get(position);
 
             holder.tvNameElement.setText(theElement.getName());
 
-            if(theElement.getWikiLink().equals("None"))
+            if (theElement.getWikiLink().equals("None"))
                 holder.ibWikiElement.setVisibility(View.INVISIBLE);
             else
                 holder.ibWikiElement.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Uri uri = Uri.parse(elementList.get(position).getWikiLink());
-                        Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+                        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                         startActivity(intent);
                     }
                 });
-            if(theElement.getImagesLink().equals("None"))
+            if (theElement.getImagesLink().equals("None"))
                 holder.ibImagesElement.setVisibility(View.INVISIBLE);
             else
                 holder.ibImagesElement.setOnClickListener(new View.OnClickListener() {
@@ -233,5 +238,4 @@ public class infoActivity extends Activity {
         }
 
     }
-
 }

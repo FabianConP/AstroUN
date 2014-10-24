@@ -60,7 +60,8 @@
             android:layout_gravity="center"
             android:adjustViewBounds="false"
             android:background="@drawable/detail"
-            android:focusableInTouchMode="false" />
+            android:focusableInTouchMode="false"
+            android:onClick="onClickGoogleMaps" />
 
     </LinearLayout>
 
