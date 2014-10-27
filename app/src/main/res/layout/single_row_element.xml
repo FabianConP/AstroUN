@@ -11,6 +11,8 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:adjustViewBounds="true"
         android:background="@drawable/detail"
         android:focusableInTouchMode="false" />
@@ -20,7 +22,7 @@
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_marginLeft="5dp"
-        android:layout_weight="0.8"
+        android:layout_weight="0.7"
         android:gravity="left|center"
         android:text="@string/app_name"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -32,6 +34,8 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:adjustViewBounds="false"
         android:background="@drawable/wikipedia" />
 
@@ -40,6 +44,8 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:adjustViewBounds="false"
         android:background="@drawable/images" />
 

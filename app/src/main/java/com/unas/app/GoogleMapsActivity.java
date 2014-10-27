@@ -1,20 +1,26 @@
 package com.unas.app;
 
 import android.content.Context;
+import android.location.Criteria;
 import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import Util.Util;
+
 
 public class GoogleMapsActivity extends FragmentActivity {
 
+    private static String[] ARRAY_SCALE_NAME;
     private GoogleMap mMap;
 
     @Override
@@ -28,6 +34,8 @@ public class GoogleMapsActivity extends FragmentActivity {
 
         setContentView(R.layout.activity_google_maps);
 
+        ARRAY_SCALE_NAME = getResources().getStringArray(R.array.scales);
+
         mMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map)).getMap();
         mMap.setMyLocationEnabled(true);
 
@@ -35,12 +43,14 @@ public class GoogleMapsActivity extends FragmentActivity {
     }
 
     private void addMyLocation(Context context) {
-        Location location = mMap.getMyLocation();
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        Criteria criteria = new Criteria();
+        Location location = locationManager.getLastKnownLocation(locationManager.getBestProvider(criteria, false));
         if (location != null) {
             LatLng target = new LatLng(location.getLatitude(), location.getLongitude());
-            mMap.addMarker(new MarkerOptions()
-                    .position(target)
-                    .title(getApplicationContext().getString(R.string.your_ubication)));
+            mMap.addMarker(new MarkerOptions().position(target).title(getApplicationContext().getString(R.string.your_ubication)));
+            float zoomLevel = Util.scaleToZoomLevel(Util.getScale(context));
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), zoomLevel));
         }
     }
 }

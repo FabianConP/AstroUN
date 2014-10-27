@@ -19,6 +19,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import Util.Util;
 import modelo.Element;
 
 
@@ -26,50 +27,7 @@ public class infoActivity extends Activity {
 
     public static final String MyPREFERENCES = "MyPrefs";
     public static final String LAST_SCALE = "lastScale";
-    private static final int[] ARRAY_ELEMENTS_ID = {R.array.ind_n22,
-            R.array.ind_n20,
-            R.array.ind_n19,
-            R.array.ind_n18,
-            R.array.ind_n15,
-            R.array.ind_n14,
-            R.array.ind_n11,
-            R.array.ind_n10,
-            R.array.ind_n9,
-            R.array.ind_n8,
-            R.array.ind_n7,
-            R.array.ind_n6,
-            R.array.ind_n5,
-            R.array.ind_n4,
-            R.array.ind_n3,
-            R.array.ind_n2,
-            R.array.ind_n1,
-            R.array.ind_0,
-            R.array.ind_1,
-            R.array.ind_2,
-            R.array.ind_3,
-            R.array.ind_4,
-            R.array.ind_5,
-            R.array.ind_6,
-            R.array.ind_7,
-            R.array.ind_8,
-            R.array.ind_9,
-            R.array.ind_10,
-            R.array.ind_11,
-            R.array.ind_12,
-            R.array.ind_13,
-            R.array.ind_14,
-            R.array.ind_15,
-            R.array.ind_16,
-            R.array.ind_17,
-            R.array.ind_18,
-            R.array.ind_19,
-            R.array.ind_20,
-            R.array.ind_21,
-            R.array.ind_22,
-            R.array.ind_23,
-            R.array.ind_24,
-            R.array.ind_25,
-            R.array.ind_26};
+
     public static int scale;
     private static String[] ARRAY_SCALE_NAME;
     private static SeekBar sbRange;
@@ -87,7 +45,7 @@ public class infoActivity extends Activity {
     }
 
     private static ArrayList<Element> getElements(Context context) {
-        String[] elementsArray = context.getResources().getStringArray(ARRAY_ELEMENTS_ID[scale]);
+        String[] elementsArray = context.getResources().getStringArray(Util.ARRAY_ELEMENTS_ID[scale]);
         ArrayList<Element> listElements = new ArrayList<Element>();
         for (int i = 0; i < elementsArray.length; i++)
             listElements.add(new Element(i, elementsArray[i]));
@@ -115,7 +73,7 @@ public class infoActivity extends Activity {
 
         updateElements(getApplicationContext());
 
-        sbRange.setMax(ARRAY_ELEMENTS_ID.length - 1);
+        sbRange.setMax(Util.ARRAY_ELEMENTS_ID.length - 1);
         sbRange.setProgress(scale);
         sbRange.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -150,7 +108,7 @@ public class infoActivity extends Activity {
     }
 
     private void updateElements(Context context) {
-        tvValueRange.setText(ARRAY_SCALE_NAME[scale]);
+        tvValueRange.setText("10^" + ARRAY_SCALE_NAME[scale]);
         lvElements.setAdapter(new ElementBaseAdapter(context, getElements(context)));
     }
 
