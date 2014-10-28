@@ -36,10 +36,14 @@
             android:layout_height="40dp"
             android:layout_marginLeft="10dp"
             android:layout_weight="0.1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:gravity="center"
             android:text="@string/range"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="25sp"
+            android:textColor="@android:color/primary_text_dark"
+            android:textSize="30sp"
+            android:textStyle="bold"
             android:typeface="sans" />
 
         <TextView
@@ -48,19 +52,22 @@
             android:layout_height="40dp"
             android:layout_marginLeft="10dp"
             android:layout_weight="0.9"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:gravity="center"
             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/primary_text_dark"
             android:textSize="25sp"
             android:typeface="sans" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/ibMapInfo"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_gravity="center_vertical"
             android:layout_marginRight="16dp"
             android:adjustViewBounds="false"
-            android:background="@drawable/detail"
+            android:background="@drawable/map"
             android:focusableInTouchMode="false"
             android:onClick="onClickGoogleMaps" />
 

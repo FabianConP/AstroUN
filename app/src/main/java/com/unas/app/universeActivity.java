@@ -14,57 +14,14 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import Util.Util;
+
 
 public class universeActivity extends Activity implements AnimationListener {
 
     public static final String MyPREFERENCES = "MyPrefs";
     public static final String LAST_SCALE = "lastScale";
-    int[] powersImage = {
-            R.drawable.potn22,
-            R.drawable.potn20,
-            R.drawable.potn19,
-            R.drawable.potn18,
-            R.drawable.potn15,
-            R.drawable.potn14,
-            R.drawable.potn11,
-            R.drawable.potn10,
-            R.drawable.potn9,
-            R.drawable.potn8,
-            R.drawable.potn7,
-            R.drawable.potn6,
-            R.drawable.potn5,
-            R.drawable.potn4,
-            R.drawable.potn3,
-            R.drawable.potn2,
-            R.drawable.potn1,
-            R.drawable.pot0,
-            R.drawable.pot1,
-            R.drawable.pot2,
-            R.drawable.pot3,
-            R.drawable.pot4,
-            R.drawable.pot5,
-            R.drawable.pot6,
-            R.drawable.pot7,
-            R.drawable.pot8,
-            R.drawable.pot9,
-            R.drawable.pot10,
-            R.drawable.pot11,
-            R.drawable.pot12,
-            R.drawable.pot13,
-            R.drawable.pot14,
-            R.drawable.pot15,
-            R.drawable.pot16,
-            R.drawable.pot17,
-            R.drawable.pot18,
-            R.drawable.pot19,
-            R.drawable.pot20,
-            R.drawable.pot21,
-            R.drawable.pot22,
-            R.drawable.pot23,
-            R.drawable.pot24,
-            R.drawable.pot25,
-            R.drawable.pot26
-    };
+
     Animation scaleFront;
     Animation scaleBack;
     ImageView imageFront;
@@ -93,16 +50,16 @@ public class universeActivity extends Activity implements AnimationListener {
         imageFront = (ImageView) (findViewById(R.id.first));
         imageBack = (ImageView) (findViewById(R.id.second));
 
-        imageFront.setImageResource(powersImage[scale]);
-        imageBack.setImageResource(powersImage[scale]);
+        imageFront.setImageResource(Util.powersImage[scale]);
+        imageBack.setImageResource(Util.powersImage[scale]);
     }
 
     public void onClickZoomIn(View v) {
         if (scale - 1 >= 0) {
             btZoomOut.setVisibility(View.VISIBLE);
 
-            imageFront.setImageResource(powersImage[scale]);
-            imageBack.setImageResource(powersImage[scale - 1]);
+            imageFront.setImageResource(Util.powersImage[scale]);
+            imageBack.setImageResource(Util.powersImage[scale - 1]);
 
             scaleBack = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.scale_in_front);
             scaleBack.setAnimationListener(this);
@@ -119,11 +76,11 @@ public class universeActivity extends Activity implements AnimationListener {
     }
 
     public void onClickZoomOut(View v) {
-        if (scale + 1 < powersImage.length) {
+        if (scale + 1 < Util.powersImage.length) {
             btZoomIn.setVisibility(View.VISIBLE);
 
-            imageFront.setImageResource(powersImage[scale]);
-            imageBack.setImageResource(powersImage[scale + 1]);
+            imageFront.setImageResource(Util.powersImage[scale]);
+            imageBack.setImageResource(Util.powersImage[scale + 1]);
 
             scaleFront = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.scale_low_front);
             scaleFront.setAnimationListener(this);
@@ -133,7 +90,7 @@ public class universeActivity extends Activity implements AnimationListener {
             scaleBack.setAnimationListener(this);
             imageBack.startAnimation(scaleBack);
             scale++;
-            if (scale + 1 == powersImage.length)
+            if (scale + 1 == Util.powersImage.length)
                 btZoomOut.setVisibility(View.INVISIBLE);
         }
         setScale(scale);
@@ -162,15 +119,15 @@ public class universeActivity extends Activity implements AnimationListener {
         super.onResume();  // Always call the superclass method first
 
         scale = getScale();
-        imageFront.setImageResource(powersImage[scale]);
-        imageBack.setImageResource(powersImage[scale]);
+        imageFront.setImageResource(Util.powersImage[scale]);
+        imageBack.setImageResource(Util.powersImage[scale]);
 
         if (scale == 0)
             btZoomIn.setVisibility(View.INVISIBLE);
         else
             btZoomIn.setVisibility(View.VISIBLE);
 
-        if (scale + 1 == powersImage.length)
+        if (scale + 1 == Util.powersImage.length)
             btZoomOut.setVisibility(View.INVISIBLE);
         else
             btZoomOut.setVisibility(View.VISIBLE);

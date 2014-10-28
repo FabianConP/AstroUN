@@ -32,17 +32,8 @@ public class infoActivity extends Activity {
     private static String[] ARRAY_SCALE_NAME;
     private static SeekBar sbRange;
     private static TextView tvValueRange;
+    private static ImageButton ibMapInfo;
     private static ListView lvElements;
-
-    private static String performRange(Context context, String strScale) {
-        String[] range = strScale.split("-");
-        String from = context.getResources().getString(R.string.from);
-        String to = context.getResources().getString(R.string.to);
-        if (range.length == 1)
-            return range[0];
-        else
-            return from + " " + range[0] + " " + to + " " + range[1];
-    }
 
     private static ArrayList<Element> getElements(Context context) {
         String[] elementsArray = context.getResources().getStringArray(Util.ARRAY_ELEMENTS_ID[scale]);
@@ -65,6 +56,7 @@ public class infoActivity extends Activity {
 
         sbRange = (SeekBar) findViewById(R.id.sbRange);
         tvValueRange = (TextView) findViewById(R.id.tvValueRange);
+        ibMapInfo = (ImageButton) findViewById(R.id.ibMapInfo);
         lvElements = (ListView) findViewById(R.id.lvElements);
 
         ARRAY_SCALE_NAME = getResources().getStringArray(R.array.scales);
@@ -93,6 +85,7 @@ public class infoActivity extends Activity {
 
             }
         });
+
     }
 
     private int getScale() {
@@ -109,7 +102,12 @@ public class infoActivity extends Activity {
 
     private void updateElements(Context context) {
         tvValueRange.setText("10^" + ARRAY_SCALE_NAME[scale]);
+        ibMapInfo.setVisibility(existsMap() ? View.VISIBLE : View.INVISIBLE);
         lvElements.setAdapter(new ElementBaseAdapter(context, getElements(context)));
+    }
+
+    private boolean existsMap() {
+        return scale >= 18 && scale <= 24;
     }
 
     public void onClickGoogleMaps(View view) {
@@ -168,6 +166,24 @@ public class infoActivity extends Activity {
             Element theElement = elementList.get(position);
 
             holder.tvNameElement.setText(theElement.getName());
+
+            holder.tvNameElement.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getApplicationContext(), DetailActivity.class);
+                    intent.putExtra("IND_ELEMENT", position);
+                    startActivity(intent);
+                }
+            });
+
+            holder.ibDetailElement.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getApplicationContext(), DetailActivity.class);
+                    intent.putExtra("IND_ELEMENT", position);
+                    startActivity(intent);
+                }
+            });
 
             if (theElement.getWikiLink().equals("None"))
                 holder.ibWikiElement.setVisibility(View.INVISIBLE);

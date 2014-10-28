@@ -5,11 +5,13 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_universe">Universe</string>
     <string name="title_activity_info">Information</string>
+    <string name="title_activity_detail">Detail</string>
     <string name="range">Range</string>
     <string name="from">From</string>
     <string name="to">to</string>
     <string name="title_activity_google_maps">Google Maps</string>
     <string name="your_ubication">You are here!</string>
+    <string name="description">Description</string>
 
     <string-array name="scales">
         <item>-22</item>
@@ -57,30 +59,30 @@
         <item>25</item>
         <item>26</item>
     </string-array>
-    <string-array name="ind_n22"></string-array>
-    <string-array name="ind_n20"></string-array>
-    <string-array name="ind_n19"></string-array>
-    <string-array name="ind_n18"></string-array>
-    <string-array name="ind_n15"></string-array>
-    <string-array name="ind_n14"></string-array>
-    <string-array name="ind_n11"></string-array>
-    <string-array name="ind_n10"></string-array>
-    <string-array name="ind_n9"></string-array>
-    <string-array name="ind_n8"></string-array>
-    <string-array name="ind_n7"></string-array>
-    <string-array name="ind_n6"></string-array>
-    <string-array name="ind_n5"></string-array>
-    <string-array name="ind_n4"></string-array>
-    <string-array name="ind_n3"></string-array>
-    <string-array name="ind_n2"></string-array>
-    <string-array name="ind_n1"></string-array>
-    <string-array name="ind_0"></string-array>
-    <string-array name="ind_1"></string-array>
-    <string-array name="ind_2"></string-array>
-    <string-array name="ind_3"></string-array>
-    <string-array name="ind_4"></string-array>
-    <string-array name="ind_5"></string-array>
-    <string-array name="ind_6"></string-array>
+    <string-array name="ind_n22" />
+    <string-array name="ind_n20" />
+    <string-array name="ind_n19" />
+    <string-array name="ind_n18" />
+    <string-array name="ind_n15" />
+    <string-array name="ind_n14" />
+    <string-array name="ind_n11" />
+    <string-array name="ind_n10" />
+    <string-array name="ind_n9" />
+    <string-array name="ind_n8" />
+    <string-array name="ind_n7" />
+    <string-array name="ind_n6" />
+    <string-array name="ind_n5" />
+    <string-array name="ind_n4" />
+    <string-array name="ind_n3" />
+    <string-array name="ind_n2" />
+    <string-array name="ind_n1" />
+    <string-array name="ind_0" />
+    <string-array name="ind_1" />
+    <string-array name="ind_2" />
+    <string-array name="ind_3" />
+    <string-array name="ind_4" />
+    <string-array name="ind_5" />
+    <string-array name="ind_6" />
     <string-array name="ind_7">
         <item>Earth*http://en.m.wikipedia.org/wiki/Earth</item>
         <item>Mars*http://en.m.wikipedia.org/wiki/Mars</item>
@@ -108,22 +110,89 @@
         <item>Regulus*http://en.m.wikipedia.org/wiki/Regulus</item>
         <item>Vega*http://en.m.wikipedia.org/wiki/Vega</item>
     </string-array>
-    <string-array name="ind_11"></string-array>
-    <string-array name="ind_12"></string-array>
-    <string-array name="ind_13"></string-array>
-    <string-array name="ind_14"></string-array>
-    <string-array name="ind_15"></string-array>
-    <string-array name="ind_16"></string-array>
-    <string-array name="ind_17"></string-array>
-    <string-array name="ind_18"></string-array>
-    <string-array name="ind_19"></string-array>
-    <string-array name="ind_20"></string-array>
-    <string-array name="ind_21"></string-array>
-    <string-array name="ind_22"></string-array>
-    <string-array name="ind_23"></string-array>
-    <string-array name="ind_24"></string-array>
-    <string-array name="ind_25"></string-array>
-    <string-array name="ind_26"></string-array>
+    <string-array name="ind_11" />
+    <string-array name="ind_12" />
+    <string-array name="ind_13" />
+    <string-array name="ind_14" />
+    <string-array name="ind_15" />
+    <string-array name="ind_16" />
+    <string-array name="ind_17" />
+    <string-array name="ind_18" />
+    <string-array name="ind_19" />
+    <string-array name="ind_20" />
+    <string-array name="ind_21" />
+    <string-array name="ind_22" />
+    <string-array name="ind_23" />
+    <string-array name="ind_24" />
+    <string-array name="ind_25" />
+    <string-array name="ind_26" />
 
+    <string-array name="ind_n22_desc" />
+    <string-array name="ind_n20_desc" />
+    <string-array name="ind_n19_desc" />
+    <string-array name="ind_n18_desc" />
+    <string-array name="ind_n15_desc" />
+    <string-array name="ind_n14_desc" />
+    <string-array name="ind_n11_desc" />
+    <string-array name="ind_n10_desc" />
+    <string-array name="ind_n9_desc" />
+    <string-array name="ind_n8_desc" />
+    <string-array name="ind_n7_desc" />
+    <string-array name="ind_n6_desc" />
+    <string-array name="ind_n5_desc" />
+    <string-array name="ind_n4_desc" />
+    <string-array name="ind_n3_desc" />
+    <string-array name="ind_n2_desc" />
+    <string-array name="ind_n1_desc" />
+    <string-array name="ind_0_desc" />
+    <string-array name="ind_1_desc" />
+    <string-array name="ind_2_desc" />
+    <string-array name="ind_3_desc" />
+    <string-array name="ind_4_desc" />
+    <string-array name="ind_5_desc" />
+    <string-array name="ind_6_desc" />
+    <string-array name="ind_7_desc">
+        <item>Earth*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+        <item>Mars*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+        <item>Mercury*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+        <item>Moon*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+        <item>Titan*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+        <item>Venus*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+    </string-array>
+    <string-array name="ind_8_desc">
+        <item>Jupiter*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+        <item>Neptune*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+        <item>Saturn*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+        <item>Uranus*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+    </string-array>
+    <string-array name="ind_9_desc">
+        <item>Alpha Centauri A*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+        <item>Alpha Centauri B*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+        <item>Gliese 229A*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+        <item>Sun*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+    </string-array>
+    <string-array name="ind_10_desc">
+        <item>Altair*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+        <item>Capella*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+        <item>Pollux*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+        <item>Regulus*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+        <item>Vega*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+    </string-array>
+    <string-array name="ind_11_desc" />
+    <string-array name="ind_12_desc" />
+    <string-array name="ind_13_desc" />
+    <string-array name="ind_14_desc" />
+    <string-array name="ind_15_desc" />
+    <string-array name="ind_16_desc" />
+    <string-array name="ind_17_desc" />
+    <string-array name="ind_18_desc" />
+    <string-array name="ind_19_desc" />
+    <string-array name="ind_20_desc" />
+    <string-array name="ind_21_desc" />
+    <string-array name="ind_22_desc" />
+    <string-array name="ind_23_desc" />
+    <string-array name="ind_24_desc" />
+    <string-array name="ind_25_desc" />
+    <string-array name="ind_26_desc" />
 
 </resources>
