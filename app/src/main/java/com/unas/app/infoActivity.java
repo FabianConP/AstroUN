@@ -25,17 +25,14 @@ import modelo.Element;
 
 public class infoActivity extends Activity {
 
-    public static final String MyPREFERENCES = "MyPrefs";
-    public static final String LAST_SCALE = "lastScale";
+    private int scale;
+    private String[] ARRAY_SCALE_NAME;
+    private SeekBar sbRange;
+    private TextView tvValueRange;
+    private ImageButton ibMapInfo;
+    private ListView lvElements;
 
-    public static int scale;
-    private static String[] ARRAY_SCALE_NAME;
-    private static SeekBar sbRange;
-    private static TextView tvValueRange;
-    private static ImageButton ibMapInfo;
-    private static ListView lvElements;
-
-    private static ArrayList<Element> getElements(Context context) {
+    private ArrayList<Element> getElements(Context context) {
         String[] elementsArray = context.getResources().getStringArray(Util.ARRAY_ELEMENTS_ID[scale]);
         ArrayList<Element> listElements = new ArrayList<Element>();
         for (int i = 0; i < elementsArray.length; i++)
@@ -89,14 +86,14 @@ public class infoActivity extends Activity {
     }
 
     private int getScale() {
-        SharedPreferences sharedPref = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-        return sharedPref.getInt(LAST_SCALE, 0);
+        SharedPreferences sharedPref = getSharedPreferences(Util.MyPREFERENCES, Context.MODE_PRIVATE);
+        return sharedPref.getInt(Util.LAST_SCALE, 0);
     }
 
     private void setScale(int scale) {
-        SharedPreferences sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        SharedPreferences sharedpreferences = getSharedPreferences(Util.MyPREFERENCES, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedpreferences.edit();
-        editor.putInt(LAST_SCALE, scale);
+        editor.putInt(Util.LAST_SCALE, scale);
         editor.commit();
     }
 
@@ -122,7 +119,7 @@ public class infoActivity extends Activity {
         ImageButton ibImagesElement;
     }
 
-    protected class ElementBaseAdapter extends BaseAdapter {
+    private class ElementBaseAdapter extends BaseAdapter {
 
         private ArrayList<Element> elementList;
 

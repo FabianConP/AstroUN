@@ -19,17 +19,14 @@ import Util.Util;
 
 public class universeActivity extends Activity implements AnimationListener {
 
-    public static final String MyPREFERENCES = "MyPrefs";
-    public static final String LAST_SCALE = "lastScale";
-
-    Animation scaleFront;
-    Animation scaleBack;
-    ImageView imageFront;
-    ImageView imageBack;
-    int scale = 0;
-    Button btZoomIn;
-    Button btZoomOut;
-    Button btInfo;
+    private Animation scaleFront;
+    private Animation scaleBack;
+    private ImageView imageFront;
+    private ImageView imageBack;
+    private int scale = 0;
+    private Button btZoomIn;
+    private Button btZoomOut;
+    private Button btInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,14 +94,14 @@ public class universeActivity extends Activity implements AnimationListener {
     }
 
     private int getScale() {
-        SharedPreferences sharedPref = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-        return sharedPref.getInt(LAST_SCALE, 0);
+        SharedPreferences sharedPref = getSharedPreferences(Util.MyPREFERENCES, Context.MODE_PRIVATE);
+        return sharedPref.getInt(Util.LAST_SCALE, 0);
     }
 
     private void setScale(int scale) {
-        SharedPreferences sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        SharedPreferences sharedpreferences = getSharedPreferences(Util.MyPREFERENCES, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedpreferences.edit();
-        editor.putInt(LAST_SCALE, scale);
+        editor.putInt(Util.LAST_SCALE, scale);
         editor.commit();
     }
 

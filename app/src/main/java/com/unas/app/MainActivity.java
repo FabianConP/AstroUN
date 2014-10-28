@@ -13,8 +13,8 @@ import android.widget.FrameLayout;
 
 public class MainActivity extends Activity implements AnimationListener {
 
-    Animation animWelcome;
-    FrameLayout container;
+    private Animation animWelcome;
+    private FrameLayout container;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

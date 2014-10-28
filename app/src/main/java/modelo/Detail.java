@@ -1,8 +1,8 @@
 package modelo;
 
 public class Detail {
-    String title;
-    String desc;
+    private String title;
+    private String desc;
 
     public Detail(String info) {
         String[] data = info.split(":");

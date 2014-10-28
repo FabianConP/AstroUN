@@ -21,7 +21,7 @@ import modelo.Detail;
 
 public class DetailActivity extends Activity {
 
-    private static ListView lvDetails;
+    private ListView lvDetails;
     private int indElement;
 
     @Override
@@ -48,8 +48,8 @@ public class DetailActivity extends Activity {
         String[] elementsDetailsArray = context.getResources().getStringArray(Util.ARRAY_ELEMENTS_DESC[scale]);
         String[] details = elementsDetailsArray[indElement].split(";");
         ArrayList<Detail> listDetails = new ArrayList<Detail>();
-        for (int i = 0; i < details.length; i++)
-            listDetails.add(new Detail(details[i]));
+        for (String detail : details)
+            listDetails.add(new Detail(detail));
         return listDetails;
     }
 
@@ -58,7 +58,7 @@ public class DetailActivity extends Activity {
         TextView tvDescDetail;
     }
 
-    protected class DetailBaseAdapter extends BaseAdapter {
+    private static class DetailBaseAdapter extends BaseAdapter {
 
         private ArrayList<Detail> detailList;
 

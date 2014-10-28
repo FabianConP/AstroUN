@@ -1,25 +1,25 @@
 <FrameLayout
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/welcomeContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:background="@android:color/black">
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/imageView"
         android:layout_gravity="center"
         android:adjustViewBounds="false"
         android:background="@android:color/black" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:id="@+id/textView"
         android:layout_gravity="center_horizontal|bottom"
-        android:textSize="100dp"
+        android:text="@string/app_name"
         android:textAlignment="center"
-        android:textColor="@android:color/darker_gray" />
+        android:textColor="@android:color/darker_gray"
+        android:textSize="100sp" />
 </FrameLayout>

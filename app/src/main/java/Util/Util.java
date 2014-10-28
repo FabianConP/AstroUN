@@ -7,7 +7,8 @@ import com.unas.app.R;
 
 public class Util {
 
-
+    public static final String MyPREFERENCES = "MyPrefs";
+    public static final String LAST_SCALE = "lastScale";
     public static final int[] ARRAY_ELEMENTS_ID = {R.array.ind_n22,
             R.array.ind_n20,
             R.array.ind_n19,
@@ -97,8 +98,7 @@ public class Util {
             R.array.ind_24_desc,
             R.array.ind_25_desc,
             R.array.ind_26_desc};
-    private static final String MyPREFERENCES = "MyPrefs";
-    private static final String LAST_SCALE = "lastScale";
+
     public static int[] powersImage = {
             R.drawable.potn22,
             R.drawable.potn20,

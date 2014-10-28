@@ -20,7 +20,6 @@ import Util.Util;
 
 public class GoogleMapsActivity extends FragmentActivity {
 
-    private static String[] ARRAY_SCALE_NAME;
     private GoogleMap mMap;
 
     @Override
@@ -34,8 +33,6 @@ public class GoogleMapsActivity extends FragmentActivity {
 
         setContentView(R.layout.activity_google_maps);
 
-        ARRAY_SCALE_NAME = getResources().getStringArray(R.array.scales);
-
         mMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map)).getMap();
         mMap.setMyLocationEnabled(true);
 
@@ -48,7 +45,7 @@ public class GoogleMapsActivity extends FragmentActivity {
         Location location = locationManager.getLastKnownLocation(locationManager.getBestProvider(criteria, false));
         if (location != null) {
             LatLng target = new LatLng(location.getLatitude(), location.getLongitude());
-            mMap.addMarker(new MarkerOptions().position(target).title(getApplicationContext().getString(R.string.your_ubication)));
+            mMap.addMarker(new MarkerOptions().position(target).title(context.getString(R.string.your_ubication)));
             float zoomLevel = Util.scaleToZoomLevel(Util.getScale(context));
             mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), zoomLevel));
         }
