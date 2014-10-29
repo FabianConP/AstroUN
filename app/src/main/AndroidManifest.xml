@@ -55,6 +55,10 @@
             android:name="com.unas.app.DetailActivity"
             android:label="@string/title_activity_detail"
             android:screenOrientation="landscape" />
+        <activity
+            android:name="com.unas.app.MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>

@@ -3,8 +3,10 @@ package com.unas.app;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.MotionEvent;
+import android.view.ScaleGestureDetector;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -19,6 +21,7 @@ import Util.Util;
 
 public class universeActivity extends Activity implements AnimationListener {
 
+    ScaleGestureDetector scaleGestureDetector;
     private Animation scaleFront;
     private Animation scaleBack;
     private ImageView imageFront;
@@ -42,13 +45,38 @@ public class universeActivity extends Activity implements AnimationListener {
         btZoomOut = (Button) (findViewById(R.id.btZoomOut));
         btInfo = (Button) (findViewById(R.id.btInfo));
 
-        scale = getScale();
+        scale = Util.getScale(getApplicationContext());
 
         imageFront = (ImageView) (findViewById(R.id.first));
         imageBack = (ImageView) (findViewById(R.id.second));
 
         imageFront.setImageResource(Util.powersImage[scale]);
         imageBack.setImageResource(Util.powersImage[scale]);
+
+
+        imageFront.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                Context context = getApplicationContext();
+                scaleGestureDetector = new
+                        ScaleGestureDetector(context,
+                        new MyOnScaleGestureListener(v));
+                scaleGestureDetector.onTouchEvent(event);
+                return true;
+            }
+        });
+
+        imageBack.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                Context context = getApplicationContext();
+                scaleGestureDetector = new
+                        ScaleGestureDetector(context,
+                        new MyOnScaleGestureListener(v));
+                scaleGestureDetector.onTouchEvent(event);
+                return true;
+            }
+        });
     }
 
     public void onClickZoomIn(View v) {
@@ -69,7 +97,7 @@ public class universeActivity extends Activity implements AnimationListener {
             if (scale == 0)
                 btZoomIn.setVisibility(View.INVISIBLE);
         }
-        setScale(scale);
+        Util.setScale(getApplicationContext(), scale);
     }
 
     public void onClickZoomOut(View v) {
@@ -90,19 +118,7 @@ public class universeActivity extends Activity implements AnimationListener {
             if (scale + 1 == Util.powersImage.length)
                 btZoomOut.setVisibility(View.INVISIBLE);
         }
-        setScale(scale);
-    }
-
-    private int getScale() {
-        SharedPreferences sharedPref = getSharedPreferences(Util.MyPREFERENCES, Context.MODE_PRIVATE);
-        return sharedPref.getInt(Util.LAST_SCALE, 0);
-    }
-
-    private void setScale(int scale) {
-        SharedPreferences sharedpreferences = getSharedPreferences(Util.MyPREFERENCES, Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedpreferences.edit();
-        editor.putInt(Util.LAST_SCALE, scale);
-        editor.commit();
+        Util.setScale(getApplicationContext(), scale);
     }
 
     public void onClickInfo(View v) {
@@ -115,7 +131,7 @@ public class universeActivity extends Activity implements AnimationListener {
     public void onResume() {
         super.onResume();  // Always call the superclass method first
 
-        scale = getScale();
+        scale = Util.getScale(getApplicationContext());
         imageFront.setImageResource(Util.powersImage[scale]);
         imageBack.setImageResource(Util.powersImage[scale]);
 
@@ -143,5 +159,45 @@ public class universeActivity extends Activity implements AnimationListener {
     @Override
     public void onAnimationRepeat(Animation animation) {
 
+    }
+
+    public class MyOnScaleGestureListener extends
+            ScaleGestureDetector.SimpleOnScaleGestureListener {
+
+        private View view;
+
+        public MyOnScaleGestureListener(View view) {
+            this.view = view;
+        }
+
+        @Override
+        public boolean onScale(ScaleGestureDetector detector) {
+
+            float scaleFactor = detector.getScaleFactor();
+
+            Log.w("myApp", scaleFactor + "");
+            //Toast.makeText(getApplicationContext(),scaleFactor+"", Toast.LENGTH_SHORT).show();
+
+            if (scaleFactor > 1) {
+                onClickZoomOut(view);
+                //Toast.makeText(getApplicationContext(),scaleFactor+" out", Toast.LENGTH_SHORT).show();
+
+            } else {
+                onClickZoomIn(view);
+                //Toast.makeText(getApplicationContext(),scaleFactor+" in",Toast.LENGTH_SHORT).show();
+
+            }
+            return true;
+        }
+
+        @Override
+        public boolean onScaleBegin(ScaleGestureDetector detector) {
+            return true;
+        }
+
+        @Override
+        public void onScaleEnd(ScaleGestureDetector detector) {
+
+        }
     }
 }

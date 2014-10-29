@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_menu"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.unas.app.MenuActivity">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:id="@+id/ibTravel"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="#CC000000"
+            android:onClick="onClickTravel"
+            android:text="@string/startTravel"
+            android:textColor="@android:color/primary_text_dark"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/ibHowToUse"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_gravity="left|bottom"
+            android:background="#CC000000"
+            android:text="@string/howToUse"
+            android:textColor="@android:color/primary_text_dark"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/ibAboutUS"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_gravity="right|bottom"
+            android:background="#CC000000"
+            android:text="@string/aboutUs"
+            android:textColor="@android:color/primary_text_dark"
+            android:textSize="30sp" />
+
+    </FrameLayout>
+
+</RelativeLayout>

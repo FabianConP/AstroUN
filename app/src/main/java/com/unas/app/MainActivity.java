@@ -39,9 +39,9 @@ public class MainActivity extends Activity implements AnimationListener {
 
         // check for fade in animation
         if (animation == animWelcome) {
-            //Toast.makeText(getApplicationContext(), "Animation Stopped",Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(getApplicationContext(), universeActivity.class);
+            Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
             startActivity(intent);
+            finish();
         }
 
     }
