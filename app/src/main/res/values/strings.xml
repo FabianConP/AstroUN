@@ -20,6 +20,9 @@
     <string name="questionExitApp">Are you sure you want to close this app?</string>
     <string name="yesVar">Yes</string>v
     <string name="noVar">No</string>
+    <string name="pow">raised to the power of</string>
+    <string name="zoomIn">Zoom in</string>
+    <string name="zoomOut">Zoom out</string>
 
     <string-array name="scales">
         <item>-22</item>

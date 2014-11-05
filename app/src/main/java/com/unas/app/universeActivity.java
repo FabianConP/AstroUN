@@ -1,6 +1,7 @@
 package com.unas.app;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -48,6 +49,18 @@ public class universeActivity extends Activity implements AnimationListener {
         imageFront.setImageResource(Util.powersImage[scale]);
         imageBack.setImageResource(Util.powersImage[scale]);
 
+        updateContentDescriptions();
+    }
+
+    private String getNameScale() {
+        Context context = getApplicationContext();
+        String pow = context.getString(R.string.pow);
+        return "10 " + pow + " " + context.getResources().getStringArray(R.array.scales)[Util.getScale(context)];
+    }
+
+    private void updateContentDescriptions() {
+        imageFront.setContentDescription(getNameScale());
+        imageBack.setContentDescription(getNameScale());
     }
 
     public void onClickZoomIn(View v) {
@@ -69,6 +82,7 @@ public class universeActivity extends Activity implements AnimationListener {
                 btZoomIn.setVisibility(View.INVISIBLE);
         }
         Util.setScale(getApplicationContext(), scale);
+        //updateContentDescriptions();
     }
 
     public void onClickZoomOut(View v) {
@@ -90,6 +104,7 @@ public class universeActivity extends Activity implements AnimationListener {
                 btZoomOut.setVisibility(View.INVISIBLE);
         }
         Util.setScale(getApplicationContext(), scale);
+        //updateContentDescriptions();
     }
 
     public void onClickInfo(View v) {
