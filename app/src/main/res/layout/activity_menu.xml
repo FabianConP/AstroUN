@@ -16,7 +16,7 @@
         <Button
             android:id="@+id/ibTravel"
             android:layout_width="180dp"
-            android:layout_height="80dp"
+            android:layout_height="60dp"
             android:layout_gravity="center_horizontal|bottom"
             android:background="#CC000000"
             android:onClick="onClickTravel"
@@ -27,7 +27,7 @@
         <Button
             android:id="@+id/ibHowToUse"
             android:layout_width="180dp"
-            android:layout_height="80dp"
+            android:layout_height="60dp"
             android:layout_gravity="left|bottom"
             android:background="#CC000000"
             android:text="@string/howToUse"
@@ -37,9 +37,10 @@
         <Button
             android:id="@+id/ibAboutUS"
             android:layout_width="180dp"
-            android:layout_height="80dp"
+            android:layout_height="60dp"
             android:layout_gravity="right|bottom"
             android:background="#CC000000"
+            android:onClick="onClickAboutUs"
             android:text="@string/aboutUs"
             android:textColor="@android:color/primary_text_dark"
             android:textSize="30sp" />

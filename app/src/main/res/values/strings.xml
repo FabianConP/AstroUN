@@ -7,6 +7,7 @@
     <string name="title_activity_info">Information</string>
     <string name="title_activity_detail">Detail</string>
     <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_about_us">About us</string>
     <string name="range">Range</string>
     <string name="from">From</string>
     <string name="to">to</string>
@@ -18,11 +19,18 @@
     <string name="aboutUs">About us</string>
     <string name="closingApp">Closing app</string>
     <string name="questionExitApp">Are you sure you want to close this app?</string>
-    <string name="yesVar">Yes</string>v
+    <string name="yesVar">Yes</string>
+    v
     <string name="noVar">No</string>
     <string name="pow">raised to the power of</string>
     <string name="zoomIn">Zoom in</string>
     <string name="zoomOut">Zoom out</string>
+    <string name="nameDev1">Fabian Conejo</string>
+    <string name="facebookDev1">https://www.facebook.com/FabianConP</string>
+    <string name="twitterDev1">https://twitter.com/FabianConP</string>
+    <string name="nameDev2">Alejandro Arias</string>
+    <string name="facebookDev2">https://www.facebook.com/alejandro.arias.526</string>
+    <string name="twitterDev2">https://twitter.com/FabianConP</string>
 
     <string-array name="scales">
         <item>-22</item>

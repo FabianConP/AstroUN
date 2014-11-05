@@ -29,6 +29,11 @@ public class MenuActivity extends Activity {
         startActivity(intent);
     }
 
+    public void onClickAboutUs(View view) {
+        Intent intent = new Intent(getApplicationContext(), AboutUsActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     public void onBackPressed() {
         String title = getApplicationContext().getString(R.string.closingApp);

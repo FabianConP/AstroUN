@@ -33,7 +33,7 @@
             android:name="com.unas.app.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape">
-            <intent-filter>
+        <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -58,6 +58,10 @@
         <activity
             android:name="com.unas.app.MenuActivity"
             android:label="@string/title_activity_menu"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:label="@string/title_activity_about_us"
             android:screenOrientation="landscape"></activity>
     </application>
 
