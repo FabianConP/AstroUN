@@ -110,7 +110,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
                 android:background="@drawable/twitter"
-                android:onClick="onClickTwitterDev1" />
+                android:onClick="onClickTwitterDev2" />
         </RelativeLayout>
 
     </RelativeLayout>
