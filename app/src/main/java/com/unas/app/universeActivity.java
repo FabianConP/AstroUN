@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -12,6 +13,7 @@ import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import Util.Util;
 
@@ -27,6 +29,8 @@ public class universeActivity extends Activity implements AnimationListener {
     private Button btZoomOut;
     private Button btInfo;
 
+    private String[] ARRAY_SCALE_NAME;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +41,9 @@ public class universeActivity extends Activity implements AnimationListener {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_universe);
+
+        ARRAY_SCALE_NAME = getResources().getStringArray(R.array.scales);
+
         btZoomIn = (Button) (findViewById(R.id.btZoomIn));
         btZoomOut = (Button) (findViewById(R.id.btZoomOut));
         btInfo = (Button) (findViewById(R.id.btInfo));
@@ -49,6 +56,8 @@ public class universeActivity extends Activity implements AnimationListener {
         imageFront.setImageResource(Util.powersImage[scale]);
         imageBack.setImageResource(Util.powersImage[scale]);
 
+        showToastScale(getApplicationContext());
+
         updateContentDescriptions();
     }
 
@@ -56,6 +65,12 @@ public class universeActivity extends Activity implements AnimationListener {
         Context context = getApplicationContext();
         String pow = context.getString(R.string.pow);
         return "10 " + pow + " " + context.getResources().getStringArray(R.array.scales)[Util.getScale(context)];
+    }
+
+    private void showToastScale(Context context) {
+        Toast toast = Toast.makeText(context, "10^" + ARRAY_SCALE_NAME[Util.getScale(context)], Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.TOP | Gravity.RIGHT, 0, 0);
+        toast.show();
     }
 
     private void updateContentDescriptions() {
@@ -82,7 +97,8 @@ public class universeActivity extends Activity implements AnimationListener {
                 btZoomIn.setVisibility(View.INVISIBLE);
         }
         Util.setScale(getApplicationContext(), scale);
-        //updateContentDescriptions();
+        updateContentDescriptions();
+        showToastScale(getApplicationContext());
     }
 
     public void onClickZoomOut(View v) {
@@ -104,7 +120,8 @@ public class universeActivity extends Activity implements AnimationListener {
                 btZoomOut.setVisibility(View.INVISIBLE);
         }
         Util.setScale(getApplicationContext(), scale);
-        //updateContentDescriptions();
+        updateContentDescriptions();
+        showToastScale(getApplicationContext());
     }
 
     public void onClickInfo(View v) {
