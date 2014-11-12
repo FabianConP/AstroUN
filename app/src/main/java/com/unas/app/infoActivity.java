@@ -99,7 +99,16 @@ public class infoActivity extends Activity {
 
     private void updateElements(Context context) {
         tvValueRange.setText("10^" + ARRAY_SCALE_NAME[scale]);
-        ibMapInfo.setVisibility(existsMap() ? View.VISIBLE : View.INVISIBLE);
+        if (existsMap()) {
+            ibMapInfo.setImageResource(Util.MAPS_SIST_SOLAR_IMG[0]);
+            ibMapInfo.setVisibility(View.VISIBLE);
+        }
+        if (sistSolar()){
+            ibMapInfo.setImageResource(Util.MAPS_SIST_SOLAR_IMG[1]);
+            ibMapInfo.setVisibility(View.VISIBLE);
+        }
+        if ( !existsMap() && !sistSolar() )
+            ibMapInfo.setVisibility(View.INVISIBLE);
         lvElements.setAdapter(new ElementBaseAdapter(context, getElements(context)));
     }
 
@@ -107,9 +116,16 @@ public class infoActivity extends Activity {
         return scale >= 18 && scale <= 24;
     }
 
+    private boolean sistSolar() { return scale == 30; }
+
     public void onClickGoogleMaps(View view) {
-        Intent intent = new Intent(getApplication(), GoogleMapsActivity.class);
-        startActivity(intent);
+        if ( scale != 30 ) {
+            Intent intent = new Intent(getApplication(), GoogleMapsActivity.class);
+            startActivity(intent);
+        }else{
+            Intent intent = new Intent(getApplication(), UnityPlayerNativeActivity.class);
+            startActivity(intent);
+        }
     }
 
     static class ViewHolder {

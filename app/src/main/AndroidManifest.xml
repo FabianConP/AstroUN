@@ -59,6 +59,10 @@
             android:name="com.unas.app.MenuActivity"
             android:label="@string/title_activity_menu"
             android:screenOrientation="landscape"></activity>
+        <activity android:label="@string/title_activity_sistema" android:screenOrientation="reverseLandscape" android:launchMode="singleTask" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.unas.app.UnityPlayerNativeActivity">
+            <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+            <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="false" />
+        </activity>
     </application>
 
 </manifest>

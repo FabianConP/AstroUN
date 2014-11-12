@@ -9,6 +9,7 @@ public class Util {
 
     public static final String MyPREFERENCES = "MyPrefs";
     public static final String LAST_SCALE = "lastScale";
+    public static final int[] MAPS_SIST_SOLAR_IMG = {R.drawable.map, R.drawable.sistema_solar};
     public static final int[] ARRAY_ELEMENTS_ID = {R.array.ind_n22,
             R.array.ind_n20,
             R.array.ind_n19,
