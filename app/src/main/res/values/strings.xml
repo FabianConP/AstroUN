@@ -30,6 +30,10 @@
     <string name="nameDev2">Alejandro Arias</string>
     <string name="facebookDev2">https://www.facebook.com/alejandro.arias.526</string>
     <string name="twitterDev2">https://twitter.com/alej0222</string>
+    <string name="mapType">Map type</string>
+    <string name="questionMapType">Select map type</string>
+    <string name="normalVar">Normal</string>
+    <string name="hybridVar">Hybrid</string>
 
     <string-array name="scales">
         <item>-22</item>

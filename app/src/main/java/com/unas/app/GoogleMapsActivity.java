@@ -1,6 +1,7 @@
 package com.unas.app;
 
 import android.content.Context;
+import android.content.Intent;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
@@ -35,6 +36,18 @@ public class GoogleMapsActivity extends FragmentActivity {
 
         mMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map)).getMap();
         mMap.setMyLocationEnabled(true);
+
+        Intent intent = getIntent();
+        String type = intent.getStringExtra("TYPE_MAP");
+
+        int typeMap = 0;
+
+        if (type.equals("NORMAL"))
+            typeMap = GoogleMap.MAP_TYPE_NORMAL;
+        else
+            typeMap = GoogleMap.MAP_TYPE_HYBRID;
+
+        mMap.setMapType(typeMap);
 
         addMyLocation(getApplicationContext());
     }

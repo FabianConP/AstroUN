@@ -1,7 +1,9 @@
 package com.unas.app;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
@@ -108,8 +110,33 @@ public class infoActivity extends Activity {
     }
 
     public void onClickGoogleMaps(View view) {
-        Intent intent = new Intent(getApplication(), GoogleMapsActivity.class);
-        startActivity(intent);
+        final Intent intent = new Intent(getApplication(), GoogleMapsActivity.class);
+        String title = getApplicationContext().getString(R.string.mapType);
+        String question = getApplicationContext().getString(R.string.questionMapType);
+        String normal = getApplicationContext().getString(R.string.normalVar);
+        String hybrid = getApplicationContext().getString(R.string.hybridVar);
+        DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                switch (which) {
+                    case DialogInterface.BUTTON_POSITIVE:
+                        setTypeMap(intent, "NORMAL");
+                        startActivity(intent);
+                        break;
+                    case DialogInterface.BUTTON_NEGATIVE:
+                        setTypeMap(intent, "HYBRID");
+                        startActivity(intent);
+                }
+            }
+        };
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(question)
+                .setTitle(title)
+                .setPositiveButton(normal, dialogClickListener)
+                .setNegativeButton(hybrid, dialogClickListener).show();
+    }
+
+    private void setTypeMap(Intent intent, String type) {
+        intent.putExtra("TYPE_MAP", type);
     }
 
     static class ViewHolder {
