@@ -1,0 +1,458 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<resources>
+
+    <string name="app_name">Unas</string>
+    <string name="action_settings">Configuración</string>
+    <string name="title_activity_universe">Universo</string>
+    <string name="title_activity_info">Información</string>
+    <string name="title_activity_sistema">Sistema solar</string>
+    <string name="title_activity_detail">Detalles</string>
+    <string name="title_activity_menu">Menú</string>
+    <string name="range">Rango</string>
+    <string name="from">Desde</string>
+    <string name="to">hasta</string>
+    <string name="title_activity_google_maps">Google Maps</string>
+    <string name="your_ubication">¡Estás aquí!</string>
+    <string name="description">Descripción</string>
+    <string name="howToUse">Como usar</string>
+    <string name="startTravel">Iniciar el viaje</string>
+    <string name="aboutUs">Acerca de nosotros</string>
+    <string name="closingApp">Cerrando la aplicación</string>
+    <string name="questionExitApp">¿Seguro que quieres salir?</string>
+    <string name="yesVar">Si</string>
+    <string name="noVar">No</string>
+
+    <string-array name="scales">
+        <item>-22</item>
+        <item>-20</item>
+        <item>-19</item>
+        <item>-18</item>
+        <item>-15</item>
+        <item>-14</item>
+        <item>-11</item>
+        <item>-10</item>
+        <item>-9</item>
+        <item>-8</item>
+        <item>-7</item>
+        <item>-6</item>
+        <item>-5</item>
+        <item>-4</item>
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+    </string-array>
+    <string-array name="ind_n22" >
+        <item>Quark superior*http://es.wikipedia.org/wiki/Quark_cima</item>
+    </string-array>
+    <string-array name="ind_n20" >
+        <item>Quark inferior*http://es.wikipedia.org/wiki/Quark_fondo</item>
+    </string-array>
+    <string-array name="ind_n19" >
+        <item>Quark encanto*http://es.wikipedia.org/wiki/Quark_encantado</item>
+        <item>Quark extraño*http://es.wikipedia.org/wiki/Quark_extraño</item>
+    </string-array>
+    <string-array name="ind_n18" >
+        <item>Quark arriba*http://es.wikipedia.org/wiki/Quark_arriba</item>
+        <item>Quark abajo*http://es.wikipedia.org/wiki/Quark_abajo</item>
+    </string-array>
+    <string-array name="ind_n15" >
+        <item>Protón*http://es.wikipedia.org/wiki/Protón</item>
+    </string-array>
+    <string-array name="ind_n14" >
+        <item>Núcleo de Uranio*http://es.wikipedia.org/wiki/Uranio</item>
+    </string-array>
+    <string-array name="ind_n11" >
+        <item>Átomo de hidrógeno*http://es.wikipedia.org/wiki/átomo_de_hidrógeno</item>
+    </string-array>
+    <string-array name="ind_n10" >
+        <item>Carbono*http://es.wikipedia.org/wiki/Carbono</item>
+    </string-array>
+    <string-array name="ind_n9" >
+        <item>Glucosa*http://es.wikipedia.org/wiki/Glucosa</item>
+    </string-array>
+    <string-array name="ind_n8" >
+        <item>ADN*http://es.wikipedia.org/wiki/ácido_desoxirribonucleico</item>
+    </string-array>
+    <string-array name="ind_n7" >
+        <item>VIH*http://es.wikipedia.org/wiki/Virus_de_la_inmunodeficiencia_humana</item>
+        <item>Hepatitis B*http://es.wikipedia.org/wiki/Hepatitis_B</item>
+    </string-array>
+    <string-array name="ind_n6" >
+        <item>Megavirus*http://es.wikipedia.org/wiki/Megavirus_chilensis</item>
+    </string-array>
+    <string-array name="ind_n5" >
+        <item>Núcleo celular*http://es.wikipedia.org/wiki/Núcleo_celular</item>
+        <item>Glóbulo rojo*http://es.wikipedia.org/wiki/Eritrocito</item>
+        <item>Glóbulo blanco*http://es.wikipedia.org/wiki/Leucocito</item>
+    </string-array>
+    <string-array name="ind_n4" >
+        <item>Cabello humano*http://es.wikipedia.org/wiki/Pelo</item>
+    </string-array>
+    <string-array name="ind_n3" >
+        <item>Bacteria*http://es.wikipedia.org/wiki/Bacteria</item>
+        <item>Grano de arena*http://es.wikipedia.org/wiki/Arena</item>
+        <item>Grano de sal*http://es.wikipedia.org/wiki/Sal</item>
+    </string-array>
+    <string-array name="ind_n2" >
+        <item>Grano de café*http://es.wikipedia.org/wiki/Café</item>
+        <item>Hormiga*http://es.wikipedia.org/wiki/Formicidae</item>
+    </string-array>
+    <string-array name="ind_n1" >
+        <item>Huevo*http://es.wikipedia.org/wiki/Huevo_(alimento)</item>
+        <item>Colibrí*http://es.wikipedia.org/wiki/Colibri</item>
+        <item>Huevo de codorniz*...</item>
+        <item>Fósforos*http://es.wikipedia.org/wiki/Fósforo_(utensilio)</item>
+    </string-array>
+    <string-array name="ind_0" >
+        <item>Metro*http://es.wikipedia.org/wiki/Metro</item>
+    </string-array>
+    <string-array name="ind_1" >
+        <item>Edificio de ingeniería*http://es.wikipedia.org/wiki/Facultad_de_Ingeniería_(UNAL_Bogotá)</item>
+    </string-array>
+    <string-array name="ind_2" >
+        <item>Torre Colpatria*http://es.wikipedia.org/wiki/Torre_Colpatria</item>
+    </string-array>
+    <string-array name="ind_3" >
+        <item>Monserrate*http://es.wikipedia.org/wiki/Monserrate</item>
+    </string-array>
+    <string-array name="ind_4" >
+        <item>Aviación comercial*http://es.wikipedia.org/wiki/Aviación_comercial</item>
+    </string-array>
+    <string-array name="ind_5" >
+        <item>América del sur*http://es.wikipedia.org/wiki/América_del_Sur</item>
+    </string-array>
+    <string-array name="ind_6" >
+        <item>Ceres*http://es.wikipedia.org/wiki/Ceres_(planeta_enano)</item>
+        <item>Plutón*http://es.wikipedia.org/wiki/Plutón_(planeta_enano)</item>
+        <item>Eris*http://es.wikipedia.org/wiki/Eris_(planeta_enano)</item>
+        <item>Charon*http://es.wikipedia.org/wiki/Caronte_(satélite)</item>
+    </string-array>
+    <string-array name="ind_7">
+        <item>Tierra*http://es.wikipedia.org/wiki/Tierra</item>
+        <item>Luna*http://es.wikipedia.org/wiki/Luna</item>
+        <item>Marte*http://es.wikipedia.org/wiki/Marte_(planeta)</item>
+        <item>Titan*http://es.wikipedia.org/wiki/Titán_(satélite)</item>
+        <item>Mercurio*http://es.wikipedia.org/wiki/Mercurio_(planeta)</item>
+        <item>Venus*http://es.wikipedia.org/wiki/Venus_(planeta)</item>
+    </string-array>
+    <string-array name="ind_8">
+        <item>Júpiter*http://es.wikipedia.org/wiki/Júpiter_(planeta)</item>
+        <item>Urano*http://es.wikipedia.org/wiki/Urano_(planeta)</item>
+        <item>Neptuno*http://es.wikipedia.org/wiki/Neptuno_(planeta)</item>
+        <item>Saturno*http://es.wikipedia.org/wiki/Saturno_(planeta)</item>
+    </string-array>
+    <string-array name="ind_9">
+        <item>Sol*http://es.wikipedia.org/wiki/Sol</item>
+        <item>Gliese 229A*http://es.wikipedia.org/wiki/Catálogo_Gliese</item>
+        <item>Alpha Centauri B*http://es.wikipedia.org/wiki/Alfa_Centauri</item>
+        <item>Alpha Centauri A*http://es.wikipedia.org/wiki/Alfa_Centauri</item>
+    </string-array>
+    <string-array name="ind_10">
+        <item>Capella*http://es.wikipedia.org/wiki/Capella</item>
+        <item>Vega*http://es.wikipedia.org/wiki/Vega_(estrella)</item>
+        <item>Altair*http://es.wikipedia.org/wiki/Altair</item>
+        <item>Regulus*http://es.wikipedia.org/wiki/Regulus</item>
+        <item>Pollux*http://es.wikipedia.org/wiki/Pólux_(estrella)</item>
+    </string-array>
+    <string-array name="ind_11" >
+        <item>Enif*http://es.wikipedia.org/wiki/Enif</item>
+        <item>Alnitak*http://es.wikipedia.org/wiki/Alnitak</item>
+        <item>Aldebarán*http://es.wikipedia.org/wiki/Aldebarán</item>
+        <item>Polaris*http://es.wikipedia.org/wiki/Polaris_(estrella)</item>
+        <item>Arcturus*http://es.wikipedia.org/wiki/Arturo_(estrella)</item>
+        <item>Rigel*http://es.wikipedia.org/wiki/Rigel</item>
+        <item>Gacrux*http://es.wikipedia.org/wiki/Gacrux</item>
+    </string-array>
+    <string-array name="ind_12" >
+        <item>Betelgeuse*http://es.wikipedia.org/wiki/Betelgeuse</item>
+        <item>R Doradus*http://es.wikipedia.org/wiki/R_Doradus</item>
+        <item>S Doradus*http://es.wikipedia.org/wiki/S_Doradus</item>
+        <item>La Superba*http://es.wikipedia.org/wiki/La_Superba</item>
+        <item>Pistol Star*http://es.wikipedia.org/wiki/Estrella_Pistola</item>
+        <item>Antares*http://es.wikipedia.org/wiki/Antares</item>
+    </string-array>
+    <string-array name="ind_13" >
+        <item>Nebulosa Homúnculo*http://es.wikipedia.org/wiki/Nebulosa_Homúnculo</item>
+    </string-array>
+    <string-array name="ind_14" >
+        <item>Nebulosa Stingray*http://es.wikipedia.org/wiki/Nebulosa_Stingray</item>
+    </string-array>
+    <string-array name="ind_15" >
+        <item>Nebulosa ojo de gato*http://es.wikipedia.org/wiki/Nebulosa_Ojo_de_Gato</item>
+    </string-array>
+    <string-array name="ind_16" >
+        <item>Nebulosa hormiga*http://es.wikipedia.org/wiki/Nebulosa_de_la_Hormiga</item>
+        <item>Nebulosa anillo*http://es.wikipedia.org/wiki/Nebulosa_del_Anillo</item>
+        <item>Nebulosa esquimal*http://es.wikipedia.org/wiki/NGC_2392</item>
+        <item>Nebulosa Hélice*http://es.wikipedia.org/wiki/Nebulosa_de_la_Hélice</item>
+    </string-array>
+    <string-array name="ind_17" >
+        <item>Nebulosa de Orion*http://es.wikipedia.org/wiki/Nebulosa_de_Orión</item>
+        <item>Nebulosa burbuja*http://es.wikipedia.org/wiki/NGC_7635</item>
+        <item>Nebulosa cangrejo*http://es.wikipedia.org/wiki/Nebulosa_del_Cangrejo</item>
+        <item>Nebulosa cono*http://es.wikipedia.org/wiki/Nebulosa_del_Cono</item>
+    </string-array>
+    <string-array name="ind_18" >
+        <item>Nebulosa roseta*http://es.wikipedia.org/wiki/Nebulosa_Roseta</item>
+        <item>Omega centauri*http://es.wikipedia.org/wiki/Omega_Centauri</item>
+        <item>Nebulosa caverna*http://es.wikipedia.org/wiki/Sh2-155</item>
+        <item>Nebulosa del águila*http://es.wikipedia.org/wiki/Nebulosa_del_águila</item>
+        <item>Nebulosa laguna*http://es.wikipedia.org/wiki/Nebulosa_de_la_Laguna</item>
+    </string-array>
+    <string-array name="ind_19" >
+        <item>Galaxia enana Leo ll*http://es.wikipedia.org/wiki/Leo_II</item>
+        <item>Nebulosa tarántula*http://es.wikipedia.org/wiki/Nebulosa_de_la_Tarántula</item>
+    </string-array>
+    <string-array name="ind_20" >
+        <item>Gran nube de Magallanes*http://es.wikipedia.org/wiki/Gran_Nube_de_Magallanes</item>
+        <item>Pequeña nube de Magallanes*http://es.wikipedia.org/wiki/Pequeña_Nube_de_Magallanes</item>
+        <item>Galaxia enana de sagitario*http://es.wikipedia.org/wiki/Enana_Elíptica_de_Sagitario</item>
+        <item>Galaxia enana Canes Venatici*http://es.wikipedia.org/wiki/Canes_Venatici</item>
+    </string-array>
+    <string-array name="ind_21" >
+        <item>Messier 101*http://es.wikipedia.org/wiki/Galaxia_espiral_M101</item>
+        <item>Galaxia sombrero*http://es.wikipedia.org/wiki/Galaxia_del_Sombrero</item>
+        <item>Galaxia triángulo*http://es.wikipedia.org/wiki/Galaxia_del_Triángulo</item>
+        <item>La vía láctea*http://es.wikipedia.org/wiki/Vía_Láctea</item>
+        <item>Andrómeda*http://es.wikipedia.org/wiki/Galaxia_de_Andrómeda</item>
+    </string-array>
+    <string-array name="ind_22" >
+        <item>Galaxia IC 1011*http://es.wikipedia.org/wiki/IC_1011</item>
+    </string-array>
+    <string-array name="ind_23" >
+        <item>Cúmulo de virgo*http://es.wikipedia.org/wiki/Cúmulo_de_Virgo</item>
+        <item>Abell 2029*http://es.wikipedia.org/wiki/Abell_2029</item>
+        <item>Grupo local*http://es.wikipedia.org/wiki/Grupo_Local</item>
+    </string-array>
+    <string-array name="ind_24" >
+        <item>Supercúmulo de virgo*http://es.wikipedia.org/wiki/Supercúmulo_de_Virgo</item>
+    </string-array>
+    <string-array name="ind_25" >
+        <item>Complejo de supercúmulos Piscis-Cetus*http://es.wikipedia.org/wiki/Complejo_de_Supercúmulos_Piscis-Cetus</item>
+    </string-array>
+    <string-array name="ind_26" >
+        <item>Universo conocido*http://es.wikipedia.org/wiki/Universo_conocido</item>
+    </string-array>
+
+    <string-array name="ind_n22_desc" >
+        <item>Quark superior*Espín:1/2;Carga eléctrica:+2/3 e;Masa:173,34 +- 0,761 GeV/c2</item>
+    </string-array>
+    <string-array name="ind_n20_desc" >
+        <item>Quark inferior*Espín:1/2;Carga eléctrica:-1/3 e;Masa:4.19 GeV/c2</item>
+    </string-array>
+    <string-array name="ind_n19_desc" >
+        <item>Quark encanto*Espín:1/2;Carga eléctrica:+2/3 e;Masa:1.150 - 1.350 MeV/c2</item>
+        <item>Quark extraño*Espín:1/2;Carga eléctrica:+2/3 e;Masa:80 - 130 MeV/c2</item>
+    </string-array>
+    <string-array name="ind_n18_desc" >
+        <item>Quark arriba*Espín:1/2;Carga eléctrica:+2/3 e;Masa:1,7-3,1 MeV</item>
+        <item>Quark abajo*Espín:1/2;Carga eléctrica:+2/3 e;Masa:4 - 8 MeV/c2</item>
+    </string-array>
+    <string-array name="ind_n15_desc" >
+        <item>Protón*Espín:1/2;Carga eléctrica:1,602 176 487 × 10–19 C;Masa:938,272 013(23) MeV/c2</item>
+    </string-array>
+    <string-array name="ind_n14_desc" >
+        <item>Núcleo de Uranio*Radio atómico:156 pm</item>
+    </string-array>
+    <string-array name="ind_n11_desc" >
+        <item>Átomo de hidrógeno*Masa:1,00797 u;Electronegatividad:2,2;Radio atómico:53 pm;Densidad:0,0899 kg/m^3;Punto de fusión:14,025 K;Punto de ebullición:20,268 K</item>
+    </string-array>
+    <string-array name="ind_n10_desc" >
+        <item>Carbono*Masa atómica:12,0107(8) u;Radio atómico: 67 pm</item>
+    </string-array>
+    <string-array name="ind_n9_desc" >
+        <item>Glucosa*Masa molar:180,1 g/mol;Densidad:1.54 g cm³</item>
+    </string-array>
+    <string-array name="ind_n8_desc" >
+        <item>ADN*Ancho:2,2 a 2,6 nm;Largo:0,33 nm;Pares de bases:220 millones aprox;</item>
+    </string-array>
+    <string-array name="ind_n7_desc" >
+        <item>VIH*Familia:Retroviridae;Género:Lentivirus</item>
+        <item>Hepatitis B*Familia:Hepadnaviridae;Género:Orthohepadnavirus;Periodo de incubación:4-26 semanas;Diámetro:42 nm</item>
+    </string-array>
+    <string-array name="ind_n6_desc" >
+        <item>Megavirus*Familia:Megaviridae;Género:Megavirus;Diámetro:700nm</item>
+    </string-array>
+    <string-array name="ind_n5_desc" >
+        <item>Núcleo celular*Diámetro en mamíferos:6 micrómetros;Diámetro en vegetales:5 a 25 micrómetros;Diámetro en hongos:0,5 micrómetros</item>
+        <item>Glóbulo rojo*Mujer:4.500.000;Hombre:5.400.000;Sistema:Cardiovascular</item>
+        <item>Glóbulo blanco*Tamaño:entre 8 y 20μm;Sistema:Inmune</item>
+    </string-array>
+    <string-array name="ind_n4_desc" >
+        <item>Cabello humano*Grosor:0,08 mm</item>
+    </string-array>
+    <string-array name="ind_n3_desc" >
+        <item>Bacteria*Longitud:entre 0,5 y 5μm;Imperio:Prokaryota</item>
+        <item>Grano de arena*Tamaño:entre 0,063 y 2mm</item>
+        <item>Grano de sal*Solubilidad:35,7 g/100 ml a 0 °C;Diámetro:entre 0,7 mm y 3,2 mm;Fórmula química:NaCl</item>
+    </string-array>
+    <string-array name="ind_n2_desc" >
+        <item>Grano de café*Diámetro:entre 6mm y 7mm</item>
+        <item>Hormiga*Reina:Animalia;Familia:Formicidae;Género:Solenopsis;Tamaño:entre 2 y 6mm</item>
+    </string-array>
+    <string-array name="ind_n1_desc" >
+        <item>Huevo*Energía:150 kcal 650 kJ;Grasas:10.6 g;Proteínas:12.6 g;Agua:75g;Peso: entre 60 y 70 gramos</item>
+        <item>Colibrí*Reino:Animalia;Familia:Trochilidae;Tamaño: entre 11 y 15mm</item>
+        <item>Huevo de codorniz*Grasa:11,20 g;Proteínas:13,05 g;Diámetro longitudinal:3.14;Desviación:0.12;Diámetro transversal:2.41;Desviación:0.24</item>
+        <item>Fósforos*Ignición:430-440°C</item>
+    </string-array>
+    <string-array name="ind_0_desc" >
+        <item>Metro*Símbolo:m;Magnitud:Longitud;Pulgadas:39,37;Pies:3.28084</item>
+    </string-array>
+    <string-array name="ind_1_desc" >
+        <item>Edificio de ingeniería*Localización:Cr 30 No 45-03 Ed 401</item>
+    </string-array>
+    <string-array name="ind_2_desc" >
+        <item>Torre Colpatria*Pisos:50;Altura:196m;Año de apertura:1979;Ascensores:13</item>
+    </string-array>
+    <string-array name="ind_3_desc" >
+        <item>Monserrate*Altitud:3152 msnm;Coordenadas:4°36m21s N 74°03m23s O</item>
+    </string-array>
+    <string-array name="ind_4_desc" >
+        <item>Aviación comercial*Altura máxima:45.000pies</item>
+    </string-array>
+    <string-array name="ind_5_desc" >
+        <item>América del sur*Superficie:17.891.900 km²;Población:400.000.000 hab.;Densidad:20.3 hab./km²</item>
+    </string-array>
+    <string-array name="ind_6_desc" >
+        <item>Ceres*Masa:9,5×1020 kg;Diámetro:952,4 km;Gravedad:0,27 m/s2;Densidad:2,08 g/cm³</item>
+        <item>Plutón*Masa:1,25·1022 kg;Diámetro:2.306 ± 20 km;Gravedad:0,6 m/s²;Densidad:1.750 kg/m³</item>
+        <item>Eris*Masa:(1,67±0,02)×1022 kg;Diámetro:2326km (±12km);Satélites:1;Densidad:2,52g/cm³ (±0,05 g/cm³)</item>
+        <item>Charon*Masa:(1,52±0,06)×1021 kg;Diámetro:1207 ± 3 km;Gravedad:0,278 m/s2;Densidad:1,65 ± 0,06 g/cm3</item>
+    </string-array>
+    <string-array name="ind_7_desc">
+        <item>Tierra*Radio:6400 km;Volumen:1.08321 x 10^12 km^3;Masa:5.97219 x 10^24 kg</item>
+        <item>Luna*Masa:7,349 × 1022 kg;Diámetro:3474 km;Gravedad:1,62 m/s²;Densidad:3,34 g/cm³</item>
+        <item>Marte*Masa:6,4185 × 1023 kg;Volumen:1,6318 × 1011 km³;Densidad:3.9335 ± 0.0004 g/cm³;Diámetro:6.794,4 km;Gravedad:3,711 m/s²</item>
+        <item>Titan*Masa:1,345×1023 kg;Volumen:7,16×1019 m³;Densidad:1,88 g/cm³;Diámetro:5,16×106 m;Gravedad:1,37 m/s²</item>
+        <item>Mercurio*Masa:3,302×1023 kg;Densidad:5,43 g/cm³;Diámetro:4879,4 Km;Gravedad:2,78 m/s²</item>
+        <item>Venus*Masa:4,869 × 1024 kg;Densidad:5,24 g/cm³;Diámetro:12 103,6 km;Gravedad:8,87 m/s²</item>
+    </string-array>
+    <string-array name="ind_8_desc">
+        <item>Júpiter*Masa:1,899×1027 kg;Densidad:1,33 g/cm³;Diámetro:142.984 km;Gravedad:24,79 m/s²</item>
+        <item>Urano*Masa:8.686×1025 kg;Volumen:6.833×1013 km;Densidad:1.27 g/cm³;Diámetro:51.118 km</item>
+        <item>Neptuno*Masa:1,024×1026 kg;Volumen:6.254×1013 km³;Densidad:1,64 g/cm³;Diámetro:49.572 km;Gravedad:11.15 m/s²</item>
+        <item>Saturno*Masa:5,688·1026 kg;Volumen:8,27·1023 m³;Densidad:690 kg/m³;Diámetro:1,20536·108 m;Gravedad:10,44 m/s²</item>
+    </string-array>
+    <string-array name="ind_9_desc">
+        <item>Sol*Distancia media desde la tierra:149.597.871 km;Diámetro:1.392.000 km;Volumen:1,4122 × 1018 km³;Masa:1,9891 × 1030 kg;Densidad:1411 kg/m³;Gravedad:274 m/s²</item>
+        <item>Gliese 229A*Distancia:18,8 ± 0,1 años luz;Masa:0,56 soles;Radio:0,53 soles;Temperatura:3700 K</item>
+        <item>Alpha Centauri B*Distancia:4.5 años luz;Masa:1,789 × 1030 kg;Radio:0,9 soles;Temperatura:5260 K</item>
+        <item>Alpha Centauri A*Distancia:4.5 años luz;Radio:1,2 soles;Masa:2,167 × 1030 kg;Temperatura:5790 K</item>
+    </string-array>
+    <string-array name="ind_10_desc">
+        <item>Capella*Distancia:42,2 ± 0,5 años luz;Masa:2,7 / 2,6 soles;Radio:12,2 / 9 soles;Ascención recta:05h 16min 41,36s;Declinación:+45° 59m 52,9s;Temperatura:4940 / 5700 K</item>
+        <item>Vega*Masa:2.135 ± 0.074 Masas solares;Radio:(2.26 × 2.78 Radios solares);Distancia:25.3 ± 0.1 años luz;Ascención recta:18h 36m 56.3364s;Declinación:+38° 47m 01.291s;Temperatura:9602 ± 180 K</item>
+        <item>Altair*Distancia:5,05 pársecs;Ascención recta:19h 50m 47s 002;Declinación:+08º 52m 06s 03;</item>
+        <item>Regulus*Ascención recta:A 10h 08min 22,3s BC 10h 08min 12,8/14s;Declinación:A +11° 58m 02s BC +11° 59m 48s;Distancia:77 ± 1 años luz;Masa:3,5 / 0,8 / 0,2 soles;Radio:4,15 soles</item>
+        <item>Pollux*Ascención recta:07h 45min 18,95s;Declinación:+28° 01m 34,3s;Distancia:33,7 ± 0,3 años luz;Masa:1,8 soles;Radio:10 soles;Temperatura:4770 K</item>
+    </string-array>
+    <string-array name="ind_11_desc" >
+        <item>Enif*Ascención recta:21h 44min 11,2s;Declinación:+09º 52m 30s;Distancia:670 años luz;Masa:10 - 11 soles;Radio:150 soles;Temperatura:4460 K</item>
+        <item>Alnitak*Ascención recta:05h 40m 45,5s;Declinación:-07º 56m 34s;Distancia:700 años luz;Masa:20 Masas solares;Radio:20 Radios solares;Temperatura superficial:29.500 ± 1.000 K</item>
+        <item>Aldebarán*Ascención recta:04h 35m 55,2s;Declinación:+16° 30m 33,5s;Masa:1,7 / 0,15 Masas solares;Radio:44,2 / 0,36 Radios solares;Distancia:65,1 ± 1 años luz;Temperatura superficial:4010 / 3050 K</item>
+        <item>Polaris*Ascención recta:02h 35m 54s;Declinación:89° 16m49s;Masa:6 Masas solares;Diámetro:6,3 × 107 km;Distancia:431 años luz;Temperatura superficial:7000 K</item>
+        <item>Arcturus*Ascención recta:14h 15m 39,67s;Declinación:+19° 10m 56,7s;Masa:1 – 1,5 Masas solares;Radio:25,7 ± 0,3 Radios solares;Distancia:36,7 ± 0,3 años luz;Temperatura superficial:4.290 K</item>
+        <item>Rigel*Ascención recta:05h 14min 32,3s;Declinación:-08º 12m 06s;Distancia:860 años luz;Masa:18 soles;Radio:74 soles;Temperatura:11.500 K</item>
+        <item>Gacrux*Ascención recta:12 h 31 min 9,9 s;Declinación:-57° 06m 45s;Masa:3 soles;Radio:113 soles;Distancia:88 ± 2 años luz;Temperatura:3400 K</item>
+    </string-array>
+    <string-array name="ind_12_desc" >
+        <item>Betelgeuse*Ascención recta:05h 55m 10s 307;Declinación:+07º 24m 25s 35;Masa:18–19 Masas solares;Radio:880 - 950 Radios solares;Distancia:643 ± 146 al;Temperatura superficial:3500 K</item>
+        <item>R Doradus*Ascención recta:04h 36min 45,68s;Declinación:-62º 04m 37,1s;Distancia:193 al;Temperatura:2740 K;Masa:1 sol;Radio:370 soles</item>
+        <item>S Doradus*Ascención recta:05h 18min 14,3s;Declinación:-69º 14m 59s;Distancia:180.000 al;Masa: más de 60 soles;Radio:100 - 380 soles</item>
+        <item>La Superba*Ascención recta:12h 45min 07,83s;Declinación:+45º 26m 24,9s;Distancia:711 ± 113 años luz;Temperatura:2800 K (aprox);Masa:3 soles;Radio:215 soles</item>
+        <item>Pistol Star*Ascención recta:17h 46m 15,3s;Declinación:-28° 50m 04s;Temperatura superficial:14.100 - 16.600 K;Masa solar:150 Masas solares;Radio:(300 - 340 Radios solares);Edad:2 × 10^6 años</item>
+        <item>Antares*Ascención recta:16h 29m 24s;Declinación:-26° 25m 55s;Distancia:550 al;Radio:(645 - 730 Radios solares);Masa solar:15,5 Masas solares;Temperatura superficial:3.600 K</item>
+    </string-array>
+    <string-array name="ind_13_desc" >
+        <item>Nebulosa Homúnculo*Ascención recta:10h 45m 03.6s;Declinación:-59° 41m 04s;Distancia:7,500 al;Constelación:Carina</item>
+    </string-array>
+    <string-array name="ind_14_desc" >
+        <item>Nebulosa Stingray*Ascención recta:17h 16m 21.07s;Declinación:-59° 29m 23.6s;Distancia:18.000 al;Radio:0,08 al;Constelación:Ara</item>
+    </string-array>
+    <string-array name="ind_15_desc" >
+        <item>Nebulosa ojo de gato*Ascención recta:17h 58m 33.423s;Declinación:+66° 37m 59.52s;Distancia:3.3 ± 0.9 miles de al (1.0 ± 0.3 kpc);Radio:0.2 Al;Constelación:Draco</item>
+    </string-array>
+    <string-array name="ind_16_desc" >
+        <item>Nebulosa hormiga*Ascención recta:16h 17m 13.39s;Declinación:-51° 59m 10s;Distancia:3000 al aprox;Constelación:Norma</item>
+        <item>Nebulosa anillo*Ascención recta:18h 53,6m;Declinación:+33° 02m;Distancia:2.300 al;Radio:0,9 al;Constelación:Lyra</item>
+        <item>Nebulosa esquimal*Ascención recta:07h 29m 10,8s;Declinación:+20° 54m 42,5s;Distancia:5.000 al;Radio:0,34 años luz aprox;Constelación:Géminis</item>
+        <item>Nebulosa Hélice*Ascención recta:22h 29m 38.55s;Declinación:-20° 50m 13.6s;Distancia:680 al aprox;Radio:2,87 años luz;Constelación:Aquarius</item>
+    </string-array>
+    <string-array name="ind_17_desc" >
+        <item>Nebulosa de Orion*Ascención recta:05h 35m 17,3s;Declinación:-05° 23m 28s;Distancia:1.270±76 al;Radio:12 al;Constelación:Orión</item>
+        <item>Nebulosa burbuja*Ascención recta:23h 20m 48.3s;Declinación:+61° 12m 06s;Distancia:7.100 - 11.000 al;Radio:3000 al aprox;Constelación:Cassiopeia</item>
+        <item>Nebulosa cangrejo*Ascención recta:05h 34m 31,97s;Declinación:+22° 00m 52,1s;Distancia:6.300 al;Radio:3 al;Constelación:Tauro</item>
+        <item>Nebulosa cono*Ascención recta:06h 41m 6s;Declinación:+09° 53m 0s;Distancia:2700 al;Radio:4 al;Constelación:Monoceros</item>
+    </string-array>
+    <string-array name="ind_18_desc" >
+        <item>Nebulosa roseta*Ascención recta:06h 33m 45s;Declinación:+04° 59m 54s;Distancia:5.000 al (1600 pársecs);Radio:65 al;Constelación:Monoceros</item>
+        <item>Omega centauri*Ascención recta:13h 26m 45.89s;Declinación:-47° 28m 36.7s;Distancia:18300 ± 1000 al;Radio:97 ± 6 al;Constelación:Centaurus</item>
+        <item>Nebulosa caverna*Ascención recta:22h 57m 17,14s;Declinación:+62° 28m 33,4s;Distancia:2.400 al;Radio:35 al;Constelación:Cepheus</item>
+        <item>Nebulosa del águila*Ascención recta:18h 18m 48s;Declinación:−13° 49m;Distancia:5,700 al (1750 pársecs);Radio:70×55 al;Constelación:Serpens</item>
+        <item>Nebulosa laguna*Ascención recta:18h 03m 37s;Declinación:-24° 23m 12s;Distancia:5.000 al;Radio:70 × 30 al;Constelación:Sagitario</item>
+    </string-array>
+    <string-array name="ind_19_desc" >
+        <item>Galaxia enana Leo ll*Ascención recta:11h 13m 29.2s;Declinación:+22° 09m 17s;Distancia:690 ± 70 miles de al;Radio:2100 al aprox;Constelación:Leo</item>
+        <item>Nebulosa tarántula*Ascención recta:05h 38m 38s;Declinación:-69° 05.7m;Distancia:170.000 años luz;Radio:500 al;Constelación:Dorado</item>
+    </string-array>
+    <string-array name="ind_20_desc" >
+        <item>Gran nube de Magallanes*Ascención recta:05h 23m 34,5s;Declinación:-69° 45m 11s;Distancia:136.000 al;Radio:1.900 al;Constelación:Dorado / Mensa</item>
+        <item>Pequeña nube de Magallanes*Ascención recta:00h 52m 44.8s;Declinación:-72° 49m 43s;Distancia:197 ± 9 kly (61 ± 3 kpc);Constelación:Tucana</item>
+        <item>Galaxia enana de sagitario*Ascención recta:18h 55m 19.5s;Declinación:-30° 32m 43s;Distancia:70 ± 7 miles de al;Radio:5.000 al;Constelación:Sagitario</item>
+        <item>Galaxia enana Canes Venatici*Ascención recta:13h;Declinación:+40°;Superficie:465 grados cuadrados Rango 38</item>
+    </string-array>
+    <string-array name="ind_21_desc" >
+        <item>Messier 101*Ascención recta:14h 03m 12.6s;Declinación:+54° 20m 57s;Distancia:27 Mal;Constelación:Osa Mayor</item>
+        <item>Galaxia sombrero*Ascención recta:12,0h 40,0m;Declinación:-11° 37m;Distancia:28 millones al;Radio:Entre 25.000 y 70.000 al;Constelación:Virgo</item>
+        <item>Galaxia triángulo*Ascención recta:01h 33m 50,9s;Declinación:+30° 39m 37s;Distancia:2,8 millones de al;Radio:25.000 al;Constelación:Triangulum</item>
+        <item>La vía láctea*Magnitud absoluta:-20,5;Radio:15.330 pc, 50.000 al;Masa:10^12 Masas solares;Ancho: 100.000 al;Distancia:27.700 años luz</item>
+        <item>Andrómeda*Ascención recta:00h 42m 44,3s;Declinación:+41° 16m 09s;Distancia:2,5 millones de al (2,4 *1019 km);Radio:110.000 al;Constelación:Andrómeda</item>
+    </string-array>
+    <string-array name="ind_22_desc" >
+        <item>Galaxia IC 1011*Magnitud aparente:14,7;Distancia:100 y 120 Megaparsecs;Edad:12950 millones años;Tamaño:6 millones de al</item>
+    </string-array>
+    <string-array name="ind_23_desc" >
+        <item>Cúmulo de virgo*Ascención recta:12h 27m;Declinación:+12° 43m;Miembro más brillante:Messier 49;Corrimiento al rojo:0.0036;Constelación:Virgo y Coma Berenices</item>
+        <item>Abell 2029*Ancho: 5,6 y 6 millones de años luz;Distancia:1.070 millones de al;Constelación:Serpens</item>
+        <item>Grupo local*Galaxias:44;Masa aprox:700.000 millones de masas solares</item>
+    </string-array>
+    <string-array name="ind_24_desc" >
+        <item>Supercúmulo de virgo*Longitud:33 megaparsecs;Diámetro:200 millones de al;Masa total:10^15 Masas solares;</item>
+    </string-array>
+    <string-array name="ind_25_desc" >
+        <item>Complejo de supercúmulos Piscis-Cetus*Largo:1000 millones de al;Ancho:150 millones de años luz;Masa total:10^18 Masas solares</item>
+    </string-array>
+    <string-array name="ind_26_desc" >
+        <item>Universo conocido*Radio:1,37 x 10^26 m;Volumen:1,09 x 10^79 m^3;Masa:9,27 x 10^52 kg;Densidad masa-energía:8,46 x 10^-27 kg/m^3</item>
+    </string-array>
+
+
+</resources>
