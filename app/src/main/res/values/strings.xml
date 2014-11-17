@@ -1,220 +1,457 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Unas</string>
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_universe">Universe</string>
-    <string name="title_activity_info">Information</string>
-    <string name="title_activity_detail">Detail</string>
-    <string name="title_activity_menu">Menu</string>
-    <string name="title_activity_about_us">About us</string>
-    <string name="range">Range</string>
-    <string name="from">From</string>
-    <string name="to">to</string>
-    <string name="title_activity_google_maps">Google Maps</string>
-    <string name="your_ubication">You are here!</string>
-    <string name="description">Description</string>
-    <string name="howToUse">How to use</string>
-    <string name="startTravel">Start travel</string>
-    <string name="aboutUs">About us</string>
-    <string name="closingApp">Closing app</string>
-    <string name="questionExitApp">Are you sure you want to close this app?</string>
-    <string name="yesVar">Yes</string>
-    <string name="noVar">No</string>
-    <string name="pow">raised to the power of</string>
-    <string name="zoomIn">Zoom in</string>
-    <string name="zoomOut">Zoom out</string>
-    <string name="nameDev1">Fabian Conejo</string>
-    <string name="facebookDev1">https://www.facebook.com/FabianConP</string>
-    <string name="twitterDev1">https://twitter.com/FabianConP</string>
-    <string name="nameDev2">Alejandro Arias</string>
-    <string name="facebookDev2">https://www.facebook.com/alejandro.arias.526</string>
-    <string name="twitterDev2">https://twitter.com/alej0222</string>
-    <string name="mapType">Map type</string>
-    <string name="questionMapType">Select map type</string>
-    <string name="normalVar">Normal</string>
-    <string name="hybridVar">Hybrid</string>
+    <string name="app_name">"Unas"</string>
+    <string name="action_settings">"Configuration"</string>
+    <string name="title_activity_universe">"Universe"</string>
+    <string name="title_activity_info">"Information"</string>
+    <string name="title_activity_sistema">"Solar System"</string>
+    <string name="title_activity_detail">"Details"</string>
+    <string name="title_activity_menu">"Menu"</string>
+    <string name="range">"Range"</string>
+    <string name="from">"From"</string>
+    <string name="to">"to"</string>
+    <string name="title_activity_google_maps">"Google Maps"</string>
+    <string name="your_ubication">"You are here!"</string>
+    <string name="description">"Description"</string>
+    <string name="howToUse">"How to use"</string>
+    <string name="startTravel">"Start travel"</string>
+    <string name="aboutUs">"About Us"</string>
+    <string name="closingApp">"Closing the App"</string>
+    <string name="questionExitApp">"Are you sure you want to quit?"</string>
+    <string name="yesVar">"Yes"</string>
+    <string name="noVar">"No."</string>
 
     <string-array name="scales">
-        <item>-22</item>
-        <item>-20</item>
-        <item>-19</item>
-        <item>-18</item>
-        <item>-15</item>
-        <item>-14</item>
-        <item>-11</item>
-        <item>-10</item>
-        <item>-9</item>
-        <item>-8</item>
-        <item>-7</item>
-        <item>-6</item>
-        <item>-5</item>
-        <item>-4</item>
-        <item>-3</item>
-        <item>-2</item>
-        <item>-1</item>
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
-        <item>11</item>
-        <item>12</item>
-        <item>13</item>
-        <item>14</item>
-        <item>15</item>
-        <item>16</item>
-        <item>17</item>
-        <item>18</item>
-        <item>19</item>
-        <item>20</item>
-        <item>21</item>
-        <item>22</item>
-        <item>23</item>
-        <item>24</item>
-        <item>25</item>
-        <item>26</item>
+        <item>"-22"</item>
+        <item>"-20"</item>
+        <item>"-19"</item>
+        <item>"-18"</item>
+        <item>"-15"</item>
+        <item>"-14"</item>
+        <item>"-11"</item>
+        <item>"-10"</item>
+        <item>"-9"</item>
+        <item>"-8"</item>
+        <item>"-7"</item>
+        <item>"-6"</item>
+        <item>"-5"</item>
+        <item>"-4"</item>
+        <item>"-3"</item>
+        <item>"-2"</item>
+        <item>"-1"</item>
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>" 3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+        <item>"8"</item>
+        <item>"9"</item>
+        <item>"10."</item>
+        <item>"11."</item>
+        <item>"10"</item>
+        <item>"13"</item>
+        <item>"14"</item>
+        <item>"15"</item>
+        <item>"16"</item>
+        <item>"17"</item>
+        <item>"18"</item>
+        <item>"19"</item>
+        <item>"20"</item>
+        <item>"21"</item>
+        <item>"22"</item>
+        <item>"23"</item>
+        <item>"24"</item>
+        <item>"25"</item>
+        <item>"26"</item>
     </string-array>
-    <string-array name="ind_n22" />
-    <string-array name="ind_n20" />
-    <string-array name="ind_n19" />
-    <string-array name="ind_n18" />
-    <string-array name="ind_n15" />
-    <string-array name="ind_n14" />
-    <string-array name="ind_n11" />
-    <string-array name="ind_n10" />
-    <string-array name="ind_n9" />
-    <string-array name="ind_n8" />
-    <string-array name="ind_n7" />
-    <string-array name="ind_n6" />
-    <string-array name="ind_n5" />
-    <string-array name="ind_n4" />
-    <string-array name="ind_n3" />
-    <string-array name="ind_n2" />
-    <string-array name="ind_n1" />
-    <string-array name="ind_0" />
-    <string-array name="ind_1" />
-    <string-array name="ind_2" />
-    <string-array name="ind_3" />
-    <string-array name="ind_4" />
-    <string-array name="ind_5" />
-    <string-array name="ind_6" />
+    <string-array name="ind_n22">
+        <item>"Top Quark * http: //es.wikipedia.org/wiki/Quark_cima"</item>
+    </string-array>
+    <string-array name="ind_n20">
+        <item>"Quark bottom * http: //es.wikipedia.org/wiki/Quark_fondo"</item>
+    </string-array>
+    <string-array name="ind_n19">
+        <item>"Charm Quark * http: //es.wikipedia.org/wiki/Quark_encantado"</item>
+        <item>"Strange Quark * http: //es.wikipedia.org/wiki/Quark_extraño"</item>
+    </string-array>
+    <string-array name="ind_n18">
+        <item>"Up Quark* http: //es.wikipedia.org/wiki/Quark_arriba"</item>
+        <item>"Down Quark* http: //es.wikipedia.org/wiki/Quark_abajo"</item>
+    </string-array>
+    <string-array name="ind_n15">
+        <item>"Proton * http: //es.wikipedia.org/wiki/Protón"</item>
+    </string-array>
+    <string-array name="ind_n14">
+        <item>"Uranium Core * http: //es.wikipedia.org/wiki/Uranio"</item>
+    </string-array>
+    <string-array name="ind_n11">
+        <item>"Hydrogen atom * http: //es.wikipedia.org/wiki/átomo_de_hidrógeno"</item>
+    </string-array>
+    <string-array name="ind_n10">
+        <item>"Carbon * http: //es.wikipedia.org/wiki/Carbono"</item>
+    </string-array>
+    <string-array name="ind_n9">
+        <item>"Glucose * http: //es.wikipedia.org/wiki/Glucosa"</item>
+    </string-array>
+    <string-array name="ind_n8">
+        <item>"DNA * http: //es.wikipedia.org/wiki/ácido_desoxirribonucleico"</item>
+    </string-array>
+    <string-array name="ind_n7">
+        <item>"HIV * http: //es.wikipedia.org/wiki/Virus_de_la_inmunodeficiencia_humana"</item>
+        <item>"Hepatitis B * http: //es.wikipedia.org/wiki/Hepatitis_B"</item>
+    </string-array>
+    <string-array name="ind_n6">
+        <item>"Megavirus * http: //es.wikipedia.org/wiki/Megavirus_chilensis"</item>
+    </string-array>
+    <string-array name="ind_n5">
+        <item>"Cell Nucleus * http: //es.wikipedia.org/wiki/Núcleo_celular"</item>
+        <item>"Red Blood Cell * http: //es.wikipedia.org/wiki/Eritrocito"</item>
+        <item>"White Blood Cell * http: //es.wikipedia.org/wiki/Leucocito"</item>
+    </string-array>
+    <string-array name="ind_n4">
+        <item>"Human Hair * http: //es.wikipedia.org/wiki/Pelo"</item>
+    </string-array>
+    <string-array name="ind_n3">
+        <item>"Bacteria * http: //es.wikipedia.org/wiki/Bacteria"</item>
+        <item>"Molehill * http: //es.wikipedia.org/wiki/Arena"</item>
+        <item>"Grain of salt * http: //es.wikipedia.org/wiki/Sal"</item>
+    </string-array>
+    <string-array name="ind_n2">
+        <item>"Coffee Bean * http: //es.wikipedia.org/wiki/Café"</item>
+        <item>"Ant * http: //es.wikipedia.org/wiki/Formicidae"</item>
+    </string-array>
+    <string-array name="ind_n1">
+        <item>"Egg * ..."</item>
+        <item>"Hummingbird * http: //es.wikipedia.org/wiki/Colibri"</item>
+        <item>"Quail Egg* ..."</item>
+        <item>"Matches * ..."</item>
+    </string-array>
+    <string-array name="ind_0">
+        <item>"Metro * http: //es.wikipedia.org/wiki/Metro"</item>
+    </string-array>
+    <string-array name="ind_1">
+        <item>"Building engineering * http: //es.wikipedia.org/wiki/Facultad_de_Ingeniería_ (UNAL_Bogotá)"</item>
+    </string-array>
+    <string-array name="ind_2">
+        <item>"Colpatria Tower* http: //es.wikipedia.org/wiki/Torre_Colpatria"</item>
+    </string-array>
+    <string-array name="ind_3">
+        <item>"Monserrate * http: //es.wikipedia.org/wiki/Monserrate"</item>
+    </string-array>
+    <string-array name="ind_4">
+        <item>"Commercial Aviation * http: //es.wikipedia.org/wiki/Aviación_comercial"</item>
+    </string-array>
+    <string-array name="ind_5">
+        <item>"South America * http: //es.wikipedia.org/wiki/América_del_Sur"</item>
+    </string-array>
+    <string-array name="ind_6">
+        <item>"Ceres * http: //es.wikipedia.org/wiki/Ceres_ (planeta_enano)"</item>
+        <item>"Pluto * http: //es.wikipedia.org/wiki/Plutón_ (planeta_enano)"</item>
+        <item>"Eris * http: //es.wikipedia.org/wiki/Eris_ (planeta_enano)"</item>
+        <item>"Charon * http: //es.wikipedia.org/wiki/Caronte_ (satellite)"</item>
+    </string-array>
     <string-array name="ind_7">
-        <item>Earth*http://en.m.wikipedia.org/wiki/Earth</item>
-        <item>Mars*http://en.m.wikipedia.org/wiki/Mars</item>
-        <item>Mercury*http://en.m.wikipedia.org/wiki/Mercury_(planet)</item>
-        <item>Moon*http://en.m.wikipedia.org/wiki/Moon</item>
-        <item>Titan*http://en.m.wikipedia.org/wiki/Titan_(moon)</item>
-        <item>Venus*http://en.m.wikipedia.org/wiki/Venus</item>
+        <item>"Earth * http: //es.wikipedia.org/wiki/Tierra"</item>
+        <item>"Moon * http: //es.wikipedia.org/wiki/Luna"</item>
+        <item>"Mars * ..."</item>
+        <item>"Titan * ..."</item>
+        <item>"Mercury * ..."</item>
+        <item>"Venus * ..."</item>
     </string-array>
     <string-array name="ind_8">
-        <item>Jupiter*http://en.m.wikipedia.org/wiki/Jupiter</item>
-        <item>Neptune*http://en.m.wikipedia.org/wiki/Neptune</item>
-        <item>Saturn*http://en.m.wikipedia.org/wiki/Saturn</item>
-        <item>Uranus*http://en.m.wikipedia.org/wiki/Uranus</item>
+        <item>"Jupiter * http: //es.wikipedia.org/wiki/Júpiter_(planeta)"</item>
+        <item>"Uranus * http: //es.wikipedia.org/wiki/Urano_(planeta)"</item>
+        <item>"Neptune * http: //es.wikipedia.org/wiki/Neptuno_(planeta)"</item>
+        <item>"Saturn * http: //es.wikipedia.org/wiki/Saturno_(planeta)"</item>
     </string-array>
     <string-array name="ind_9">
-        <item>Alpha Centauri A*http://en.m.wikipedia.org/wiki/Alpha_Centauri</item>
-        <item>Alpha Centauri B*http://en.m.wikipedia.org/wiki/Alpha_Centauri</item>
-        <item>Gliese 229A*http://en.wikipedia.org/wiki/Gliese_Catalogue_of_Nearby_Stars</item>
-        <item>Sun*http://en.m.wikipedia.org/wiki/Sun</item>
+        <item>"Sol * http: //es.wikipedia.org/wiki/Sol"</item>
+        <item>"Gliese 229A * http: //es.wikipedia.org/wiki/Catálogo_Gliese"</item>
+        <item>"Alpha Centauri B * http: //es.wikipedia.org/wiki/Alfa_Centauri"</item>
+        <item>"Alpha Centauri A * http: //es.wikipedia.org/wiki/Alfa_Centauri"</item>
     </string-array>
     <string-array name="ind_10">
-        <item>Altair*http://en.m.wikipedia.org/wiki/Altair</item>
-        <item>Capella*http://en.m.wikipedia.org/wiki/Capella</item>
-        <item>Pollux*http://en.m.wikipedia.org/wiki/Pollux_(star)</item>
-        <item>Regulus*http://en.m.wikipedia.org/wiki/Regulus</item>
-        <item>Vega*http://en.m.wikipedia.org/wiki/Vega</item>
+        <item>"Capella * http: //es.wikipedia.org/wiki/Capella"</item>
+        <item>"Vega * http: //es.wikipedia.org/wiki/Vega_(estrella)"</item>
+        <item>"Altair * http: //es.wikipedia.org/wiki/Altair"</item>
+        <item>"Regulus * http: //es.wikipedia.org/wiki/Regulus"</item>
+        <item>"Pollux * http: //es.wikipedia.org/wiki/Pólux_(estrella)"</item>
     </string-array>
-    <string-array name="ind_11" />
-    <string-array name="ind_12" />
-    <string-array name="ind_13" />
-    <string-array name="ind_14" />
-    <string-array name="ind_15" />
-    <string-array name="ind_16" />
-    <string-array name="ind_17" />
-    <string-array name="ind_18" />
-    <string-array name="ind_19" />
-    <string-array name="ind_20" />
-    <string-array name="ind_21" />
-    <string-array name="ind_22" />
-    <string-array name="ind_23" />
-    <string-array name="ind_24" />
-    <string-array name="ind_25" />
-    <string-array name="ind_26" />
-    <string-array name="ind_n22_desc" />
-    <string-array name="ind_n20_desc" />
-    <string-array name="ind_n19_desc" />
-    <string-array name="ind_n18_desc" />
-    <string-array name="ind_n15_desc" />
-    <string-array name="ind_n14_desc" />
-    <string-array name="ind_n11_desc" />
-    <string-array name="ind_n10_desc" />
-    <string-array name="ind_n9_desc" />
-    <string-array name="ind_n8_desc" />
-    <string-array name="ind_n7_desc" />
-    <string-array name="ind_n6_desc" />
-    <string-array name="ind_n5_desc" />
-    <string-array name="ind_n4_desc" />
-    <string-array name="ind_n3_desc" />
-    <string-array name="ind_n2_desc" />
-    <string-array name="ind_n1_desc" />
-    <string-array name="ind_0_desc" />
-    <string-array name="ind_1_desc" />
-    <string-array name="ind_2_desc" />
-    <string-array name="ind_3_desc" />
-    <string-array name="ind_4_desc" />
-    <string-array name="ind_5_desc" />
-    <string-array name="ind_6_desc" />
+    <string-array name="ind_11">
+        <item>"Enif * http: //es.wikipedia.org/wiki/Enif"</item>
+        <item>"Alnitak * http: //es.wikipedia.org/wiki/Alnitak"</item>
+        <item>"Aldebaran * http: //es.wikipedia.org/wiki/Aldebarán"</item>
+        <item>"Polaris * http: //es.wikipedia.org/wiki/Polaris_(estrella)"</item>
+        <item>"Arcturus * http: //es.wikipedia.org/wiki/Arturo_(estrella)"</item>
+        <item>"Rigel * http: //es.wikipedia.org/wiki/Rigel"</item>
+        <item>"Gacrux * http: //es.wikipedia.org/wiki/Gacrux"</item>
+    </string-array>
+    <string-array name="ind_12">
+        <item>"Betelgeuse * http: //es.wikipedia.org/wiki/Betelgeuse"</item>
+        <item>"R Doradus * http: //es.wikipedia.org/wiki/R_Doradus"</item>
+        <item>"S Doradus * http: //es.wikipedia.org/wiki/S_Doradus"</item>
+        <item>"La Superba * http: //es.wikipedia.org/wiki/La_Superba"</item>
+        <item>"Pistol Star * http: //es.wikipedia.org/wiki/Estrella_Pistola"</item>
+        <item>"Antares * http: //es.wikipedia.org/wiki/Antares"</item>
+    </string-array>
+    <string-array name="ind_13">
+        <item>"Homunculus Nebula * http: //es.wikipedia.org/wiki/Nebulosa_Homúnculo"</item>
+    </string-array>
+    <string-array name="ind_14">
+        <item>"Stingray Nebula * http: //es.wikipedia.org/wiki/Nebulosa_Stingray"</item>
+    </string-array>
+    <string-array name="ind_15">
+        <item>"Cat's Eye Nebula * http: //es.wikipedia.org/wiki/Nebulosa_Ojo_de_Gato"</item>
+    </string-array>
+    <string-array name="ind_16">
+        <item>"Ant Nebula * http: //es.wikipedia.org/wiki/Nebulosa_de_la_Hormiga"</item>
+        <item>"Ring Nebula * http: //es.wikipedia.org/wiki/Nebulosa_del_Anillo"</item>
+        <item>"Eskimo Nebula * http: //es.wikipedia.org/wiki/NGC_2392"</item>
+        <item>"Helix Nebula * http: //es.wikipedia.org/wiki/Nebulosa_de_la_Hélice"</item>
+    </string-array>
+    <string-array name="ind_17">
+        <item>"Orion Nebula * http: //es.wikipedia.org/wiki/Nebulosa_de_Orión"</item>
+        <item>"Bubble Nebula * http: //es.wikipedia.org/wiki/NGC_7635"</item>
+        <item>"Crab Nebula * http: //es.wikipedia.org/wiki/Nebulosa_del_Cangrejo"</item>
+        <item>"Cone Nebula * http: //es.wikipedia.org/wiki/Nebulosa_del_Cono"</item>
+    </string-array>
+    <string-array name="ind_18">
+        <item>"Rosette Nebula * http: //es.wikipedia.org/wiki/Nebulosa_Roseta"</item>
+        <item>"Omega Centauri * http: //es.wikipedia.org/wiki/Omega_Centauri"</item>
+        <item>"Cave Nebula * http: //es.wikipedia.org/wiki/Sh2-155"</item>
+        <item>"Eagle Nebula * http: //es.wikipedia.org/wiki/Nebulosa_del_águila"</item>
+        <item>"Lagoon Nebula * http: //es.wikipedia.org/wiki/Nebulosa_de_la_Laguna"</item>
+    </string-array>
+    <string-array name="ind_19">
+        <item>"Dwarf Galaxy Leo II * http: //es.wikipedia.org/wiki/Leo_II"</item>
+        <item>"Tarantula Nebula * http: //es.wikipedia.org/wiki/Nebulosa_de_la_Tarántula"</item>
+    </string-array>
+    <string-array name="ind_20">
+        <item>"Large Magellanic Cloud * http: //es.wikipedia.org/wiki/Gran_Nube_de_Magallanes"</item>
+        <item>"Small Magellanic Cloud * http: //es.wikipedia.org/wiki/Pequeña_Nube_de_Magallanes"</item>
+        <item>"Sagittarius dwarf galaxy * http: //es.wikipedia.org/wiki/Enana_Elíptica_de_Sagitario"</item>
+        <item>"Canes Venatici dwarf galaxy * http: //es.wikipedia.org/wiki/Canes_Venatici"</item>
+    </string-array>
+    <string-array name="ind_21">
+        <item>"Messier 101 * http: //es.wikipedia.org/wiki/Galaxia_espiral_M101"</item>
+        <item>"Galaxy hat * http: //es.wikipedia.org/wiki/Galaxia_del_Sombrero"</item>
+        <item>"Galaxy triangle * http: //es.wikipedia.org/wiki/Galaxia_del_Triángulo"</item>
+        <item>"The milky way * http: //es.wikipedia.org/wiki/Vía_Láctea"</item>
+        <item>"Andromeda * http: //es.wikipedia.org/wiki/Galaxia_de_Andrómeda"</item>
+    </string-array>
+    <string-array name="ind_22">
+        <item>"Galaxy IC 1011 * http: //es.wikipedia.org/wiki/IC_1011"</item>
+    </string-array>
+    <string-array name="ind_23">
+        <item>"Virgo Cluster * http: //es.wikipedia.org/wiki/Cúmulo_de_Virgo"</item>
+        <item>"Abell 2029 * http: //es.wikipedia.org/wiki/Abell_2029"</item>
+        <item>"Local group * http: //es.wikipedia.org/wiki/Grupo_Local"</item>
+    </string-array>
+    <string-array name="ind_24">
+        <item>"Virgo Supercluster * http: //es.wikipedia.org/wiki/Supercúmulo_de_Virgo"</item>
+    </string-array>
+    <string-array name="ind_25">
+        <item>"Pisces-Cetus Supercluster Complex * http: //es.wikipedia.org/wiki/Complejo_de_Supercúmulos_Piscis-Cetus"</item>
+    </string-array>
+    <string-array name="ind_26">
+        <item>"Known Universe * http: //es.wikipedia.org/wiki/Universo_conocido"</item>
+    </string-array>
+
+    <string-array name="ind_n22_desc">
+        <item>" Top Quark*Spin: 1/2; Electric charge: +2/3 e; mass: 173.34 + - 0.761 GeV / c2"</item>
+    </string-array>
+    <string-array name="ind_n20_desc">
+        <item>"Bottom quark * Spin: 1/2; Electric charge: -1/3 e; weight: 4.19 GeV / c2"</item>
+    </string-array>
+    <string-array name="ind_n19_desc">
+        <item>"Charm Quark*Spin: 1/2; Electric charge: +2/3 e, Mass: 1150-1350 MeV / c2"</item>
+        <item>"Strange Quark * Spin: 1/2; Electric charge: +2/3 e; weight: 80-130 MeV / c2"</item>
+    </string-array>
+    <string-array name="ind_n18_desc">
+        <item>"Quark Spin Up *: 1/2; Electric charge: +2/3 e, Mass: 1.7 to 3.1 MeV"</item>
+        <item>"Quark Spin Down *: 1/2; Electric charge: +2/3 e, Mass: 4 to 8 MeV / c2"</item>
+    </string-array>
+    <string-array name="ind_n15_desc">
+        <item>"Proton*Spin: 1/2; Electrical Charge: 1.602 176 487 × 10-19 C; mass: 938.272 013 (23) MeV / c2"</item>
+    </string-array>
+    <string-array name="ind_n14_desc">
+        <item>"Uranium Core * Atomic Radius: 156 pm"</item>
+    </string-array>
+    <string-array name="ind_n11_desc">
+        <item>"Hydrogen atom*mass: 1.00797 u; Electronegativity: 2.2; Atomic radius: 53 pm; Density: 0.0899 kg / m ^ 3; mp: 14,025 K, Boiling Point: 20,268 K"</item>
+    </string-array>
+    <string-array name="ind_n10_desc">
+        <item>"Carbon atomic * mass: 12.0107 (8) u; Atomic radius: 67 pm"</item>
+    </string-array>
+    <string-array name="ind_n9_desc">
+        <item>"Glucose * molar mass: 180.1 g / mol; density: 1.54 g cm³"</item>
+    </string-array>
+    <string-array name="ind_n8_desc">
+        <item>"DNA * Width: 2.2 to 2.6 nm; length: 0.33 nm; base pairs approx 220 million;"</item>
+    </string-array>
+    <string-array name="ind_n7_desc">
+        <item>"HIV * Family: Retroviridae Genus: Lentivirus"</item>
+        <item>"Hepatitis B * Family: Hepadnaviridae; Gender: Orthohepadnavirus; Incubation Period: 4-26 weeks; diameter: 42 nm"</item>
+    </string-array>
+    <string-array name="ind_n6_desc">
+        <item>"Megavirus * Family: Megaviridae; Gender: Megavirus; Diameter: 700nm"</item>
+    </string-array>
+    <string-array name="ind_n5_desc">
+        <item>"Cell nucleus in mammals * Diameter: 6 microns, diameter of plant: 5-25 microns; Diameter in fungi: 0.5 micron"</item>
+        <item>"Red Blood Cell * Female: 4,500,000; Male: 5,400,000; System: Cardiovascular"</item>
+        <item>"White Blood Cell * Size: 8 to 20 .mu.m; System: Immune"</item>
+    </string-array>
+    <string-array name="ind_n4_desc">
+        <item>"Human Hair * Thickness: 0.08 mm"</item>
+    </string-array>
+    <string-array name="ind_n3_desc">
+        <item>"Bacteria * Length: 0.5 to 5 uM; Empire Prokaryota"</item>
+        <item>"Grain of sand * Size: from 0.063 to 2mm"</item>
+        <item>"Grain of salt * Solubility: 35.7 g / 100 ml at 0 ° C; Diameter: 0.7 mm and 3.2 mm; Chemical Formula: NaCl"</item>
+    </string-array>
+    <string-array name="ind_n2_desc">
+        <item>"Coffee Bean * Diameter: 6mm and 7mm"</item>
+        <item>"Ant*Queen : Animalia; Family: Formicidae Genus: Solenopsis; Size: 2 to 6mm"</item>
+    </string-array>
+    <string-array name="ind_n1_desc">
+        <item>"Egg * Energy: 650 kJ 150 kcal; fat: 10.6 g, Protein: 12.6 g; water: 75g; Weight: 60 to 70 grams"</item>
+        <item>"Hummingbird * Kingdom: Animalia; Family: Trochilidae; Size: 11 to 15mm"</item>
+        <item>"Quail Egg * Fat: 11.20 g, Protein: 13.05 g; longitudinal diameter: 3.14; deviation: 0.12; transverse diameter: 2.41; deviation: 0.24"</item>
+        <item>"Matches * Ignition: 430-440 ° C"</item>
+    </string-array>
+    <string-array name="ind_0_desc">
+        <item>"Metro * Symbol: m; Magnitude: Length, inches: 39.37; Feet: 3.28084"</item>
+    </string-array>
+    <string-array name="ind_1_desc">
+        <item>"Building Engineering * Location: Cr 30 No 45-03 Ed 401"</item>
+    </string-array>
+    <string-array name="ind_2_desc">
+        <item>"Torre Colpatria * Floors: 50; Height: 196m; Opening Year: 1979; Elevators: 13"</item>
+    </string-array>
+    <string-array name="ind_3_desc">
+        <item>"Monserrate * Altitude: 3152 m; coordinates: 4 ° 74 ° 03m23s 36m21s N O"</item>
+    </string-array>
+    <string-array name="ind_4_desc">
+        <item>"Commercial Aviation * Maximum Height: 45.000pies"</item>
+    </string-array>
+    <string-array name="ind_5_desc">
+        <item>"South America * Size: 17,891,900 km², Population: 400,000,000 inhabitants; Density. 20.3 hab / km²."</item>
+    </string-array>
+    <string-array name="ind_6_desc">
+        <item>"Ceres * Mass: 9.5 × 1020 kg, diameter: 952.4 km; Gravity: 0.27 m / s2; density: 2.08 g / cm³"</item>
+        <item>"Pluto * Weight: 1.25 · 1022 kg Diameter: 2.306 ± 20 km; Gravity: 0.6 m / s; density: 1,750 kg / m³"</item>
+        <item>"Eris * Mass: (1.67 ± 0.02) × 1022 kg, diameter: 2326km (± 12km) Satellites: 1; density: 2,52g / cm³ (± 0.05 g / cm³)"</item>
+        <item>"Charon * Mass: (1.52 ± 0.06) × 1021 kg, diameter: 1207 ± 3 km; Gravity: 0.278 m / s2; density: 1.65 ± 0.06 g / cm3"</item>
+    </string-array>
     <string-array name="ind_7_desc">
-        <item>Earth*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
-        <item>Mars*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
-        <item>Mercury*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
-        <item>Moon*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
-        <item>Titan*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
-        <item>Venus*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+        <item>"Earth * Radio: 6400 km Volume: 1.08321 x 10 ^ 12 m ^ 3; mass: 5.97219 x 10 ^ 24 kg"</item>
+        <item>"Moon * Mass: 7,349 × 1022 kg, diameter: 3474 km; Gravity: 1.62 m / s; density: 3.34 g / cm³"</item>
+        <item>"Mars * Mass: 6.4185 × 1023 kg Volume: 1.6318 × 1011 km³; Density: 3.9335 ± 0.0004 g / cm; diameter: 6794.4 km; Gravity: 3.711 m / s²"</item>
+        <item>"Titan * Weight: 1.345 × 1023 kg Volume: 7.16 × 1019 m³ Density: 1.88 g / cm; diameter: 5.16 × 106 m; Gravity: 1.37 m / s²"</item>
+        <item>"Mercury * Mass: 3,302 × 1023 kg; density: 5.43 g / cm³; Diameter: 4879.4 Km; Gravity: 2.78 m / s²"</item>
+        <item>"Venus * Mass: 4,869 × 1024 kg; density: 5.24 g / cm; diameter 12 103.6 km; Gravity: 8.87 m / s²"</item>
     </string-array>
     <string-array name="ind_8_desc">
-        <item>Jupiter*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
-        <item>Neptune*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
-        <item>Saturn*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
-        <item>Uranus*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+        <item>"Jupiter * Weight: 1.899 × 1027 kg; density: 1.33 g / cm³; Diameter: 142,984 km; Gravity: 24.79 m / s²"</item>
+        <item>"Uranus * Mass: 8,686 × 1025 kg Volume: 6.833 × 1013 km, density: 1.27 g / cm³; Diameter: 51,118 km"</item>
+        <item>"Neptune * Weight: 1.024 × 1026 kg Volume: 6.254 × 1013 km³; density: 1.64 g / cm³; Diameter: 49,572 km; Gravity: 11.15 m / s²"</item>
+        <item>"Saturn * Weight: 5,688 kg 1026 · Volume: 8.27 m³ · 1023; Density: 690 kg / m³; Diameter: 1.20536 · 108 m; Gravity: 10.44 m / s²"</item>
     </string-array>
     <string-array name="ind_9_desc">
-        <item>Alpha Centauri A*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
-        <item>Alpha Centauri B*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
-        <item>Gliese 229A*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
-        <item>Sun*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+        <item>"Sol * Average distance from Earth: 149 597 871 km; diameter: 1,392,000 km Volume: 1.4122 × 1018 km³, Mass: 1.9891 × 1030 kg Density: 1411 kg / m³; Gravity: 274 m / s²"</item>
+        <item>"Gliese 229A * Distance: 18.8 ± 0.1 light years; mass: 0.56 soles; Radio: 0.53 soles; temperature: 3700 K"</item>
+        <item>"Alpha Centauri B * Distance: 4.5 light years; mass: 1.789 × 1030 kg and radius 0.9 soles; temperature: 5260 K"</item>
+        <item>"Alpha Centauri A * Distance: 4.5 light years; Radio: 1.2 soles, Mass: 2,167 × 1030 kg; temperature: 5790 K"</item>
     </string-array>
     <string-array name="ind_10_desc">
-        <item>Altair*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
-        <item>Capella*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
-        <item>Pollux*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
-        <item>Regulus*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
-        <item>Vega*Radio:6400 km;Volume:1.08321 x 10^12 km^3;Mass:5.97219 x 10^24 kg</item>
+        <item>"Capella * Distance: 42.2 ± 0.5 light years; weight: 2.7 / 2.6 soles; Radio: 12.2 / 9 soles, straight Ascension: 05h 16min 41,36s; Declination: + 45 ° 52 59m 9f; Temperature: 4940/5700 K"</item>
+        <item>"Vega * mass: 2.135 ± 0.074 solar masses; Radio: (2.26 × 2.78 solar rays) Distance: 25.3 ± 0.1 light years Right Ascension: 18h 36m 56.3364s; Declination: + 38 ° 47m 01.291s; Temperature: 9602 ± 180 K"</item>
+        <item>"Altair * Distance: 5.05 parsecs, straight Ascension: 19h 50m 47s 002; Declination: + 08º 52m 06s 03;"</item>
+        <item>"Regulus * straight Ascension: 10h 08min to 10h 08min 22,3s BC 12.8 / 14s; Declination: A + 11 ° 58m 02s BC 48s 59m + 11 °, Distance: 1 ± 77 light years; mass: 3.5 / 0 8 / 0.2 soles; Radio: 4.15 soles"</item>
+        <item>"Pollux * straight Ascension: 07h 45min 18,95s; Declination: + 28 ° 01m 34,3s; Distance: 33.7 ± 0.3 light years; mass: 1.8 soles; Radio: 10 soles; temperature: 4770 K"</item>
     </string-array>
-    <string-array name="ind_11_desc" />
-    <string-array name="ind_12_desc" />
-    <string-array name="ind_13_desc" />
-    <string-array name="ind_14_desc" />
-    <string-array name="ind_15_desc" />
-    <string-array name="ind_16_desc" />
-    <string-array name="ind_17_desc" />
-    <string-array name="ind_18_desc" />
-    <string-array name="ind_19_desc" />
-    <string-array name="ind_20_desc" />
-    <string-array name="ind_21_desc" />
-    <string-array name="ind_22_desc" />
-    <string-array name="ind_23_desc" />
-    <string-array name="ind_24_desc" />
-    <string-array name="ind_25_desc" />
-    <string-array name="ind_26_desc" />
+    <string-array name="ind_11_desc">
+        <item>"Enif*Straight Ascension: 21h 44min 11,2s; Declination: + 09º 52m 30s; Distance: 670 light-years; mass: 10 to 11 soles; Radio: 150 soles; temperature: 4460 K"</item>
+        <item>"Alnitak*straight Ascension: 05h 40m 45,5s; Declination: -07º 56m 34s; Distance: 700 light years; mass: 20 solar masses; Radio: 20 solar rays; Surface Temperature: 29,500 ± 1000 K"</item>
+        <item>"Aldebaran * straight Ascension: 04h 35m 55,2s; Declination: + 16 ° 30m 33,5s; mass: 1.7 / 0.15 solar masses; Radio: 44.2 / 0.36 Solar Radios, Distance: 65.1 light ± 1 years; Surface Temperature: 4010/3050 K"</item>
+        <item>"Polaris*straight Ascension: 02h 35m 54s; Declination: 89 ° 16m49s; mass: 6 solar masses; diameter: 6.3 × 107 km, Distance: 431 light-years; Surface Temperature: 7000 K"</item>
+        <item>"Arcturus * straight Ascension: 14h 15m 39,67s; Declination: + 19 ° 10m 56,7s; mass: 1 to 1.5 solar masses; Radio: 25.7 ± 0.3 solar rays; Distance: 36.7 ± 0 K 4290: Surface temperature, 3 light years"</item>
+        <item>"Rigel * straight Ascension: 05h 14min 32,3s; Declination: -08º 12m 06s; Distance: 860 light-years; mass: 18 soles; Radio: 74 soles; Temperature: 11.500 K"</item>
+        <item>"Gacrux* Ascension straight 12 h 31 min 9.9 s; Declination -57 ° 06m 45s; mass: 3 soles; Radio: 113 soles; Distance: 88 ± 2 light years; temperature: 3400 K"</item>
+    </string-array>
+    <string-array name="ind_12_desc">
+        <item>"Betelgeuse * straight Ascension: 05h 55m 10s 307; Declination: + 07º 24m 25s 35; mass: 18-19 solar masses; Radio: 880-950 Solar Radios, Distance: 643 ± 146 al; Surface Temperature: 3500 K"</item>
+        <item>"R Doradus * straight Ascension: 04h 36min 45,68s; Declination: -62º 37,1s 04m, Distance: 193 al; Temperature: 2740 K; mass: 1 sun; Radio: 370 soles"</item>
+        <item>"S Doradus * straight Ascension: 05h 18min 14,3s; Declination: -69º 14m 59s; Distance: 180,000 in; Weight: 60 soles; Radio: 100-380 soles"</item>
+        <item>"La Superba * straight Ascension: 12h 45min 07,83s; Declination: + 45º 26m 24,9s; Distance: 711 ± 113 light years Temperature: 2800K (approx) Weight: 3 soles; Radio: 215 soles"</item>
+        <item>"Pistol Star * straight Ascension: 17h 46m 15,3s; Declination -28 ° 50m 04s; Surface Temperature: 14100-16600 K, solar mass: 150 solar masses; Radio: (300-340 solar rays); Age: 2 x 10 ^ 6 years"</item>
+        <item>"Antares*straight Ascension: 16h 29m 24s; Declination -26 ° 25m 55s; Distance: 550 a; Radio: (645-730 solar rays), solar mass: 15.5 solar masses; Surface Temperature: 3600 K"</item>
+    </string-array>
+    <string-array name="ind_13_desc">
+        <item>"Homunculus Nebula * straight Ascension: 10h 45m 03.6s; Declination -59 ° 41m 04s; Distance: 7,500 to; Constellation: Carina"</item>
+    </string-array>
+    <string-array name="ind_14_desc">
+        <item>"Stingray Nebula * straight Ascension: 17h 16m 21.07s; Declination -59 ° 29m 23.6s; Distance: 18,000; Radio: 0.08 in; Constellation: Ara"</item>
+    </string-array>
+    <string-array name="ind_15_desc">
+        <item>"Cat's Eye Nebula * straight Ascension: 17h 58m 33.423s; Declination: + 66 ° 37m 59.52s; distance: 3.3 ± 0.9 thousand to (1.0 ± 0.3 kpc) Radius: 0.2 Al; Constellation: Draco"</item>
+    </string-array>
+    <string-array name="ind_16_desc">
+        <item>" Ant Nebula* straight Ascension: 16h 17m 13.39s; Declination -51 ° 59m 10s; Distance: 3000 to approx; Constellation: Norma"</item>
+        <item>"Ring Nebula*straight Ascension: 18h 53,6m; Declination: + 33 ° 02m; Distance: 2,300 to; Radio: 0.9 to; Constellation: Lyra"</item>
+        <item>"Eskimo Nebula * straight Ascension: 07h 29m 10,8s; Declination: + 20 ° 54m 42,5s; Distance: 5,000 to; Radio: approx 0.34 light years Constellation: Gemini"</item>
+        <item>"Helix Nebula * Straight Ascension: 22h 29m 38.55s; Declination -20 ° 50m 13.6s; Distance: 680 to approx; Radio: 2.87 light years Constellation: Aquarius"</item>
+    </string-array>
+    <string-array name="ind_17_desc">
+        <item>"Orion Nebula * straight Ascension: 05h 35m 17,3s; Declination -05 ° 23m 28s; Distance: 1,270 ± 76 to; Radio: 12th; Constellation: Orion"</item>
+        <item>"Bubble Nebula * straight Ascension: 23h 20m 48.3s; Declination: + 61 ° 12m 06s; Distance: 7100-11000 al; Radio: 3000 to approx; Constellation: Cassiopeia"</item>
+        <item>"Crab Nebula * straight Ascension: 05h 34m 31,97s; Declination: + 22 ° 00m 52,1s; Distance: 6,300 to; Radio: 3 to; Constellation: Taurus"</item>
+        <item>"Cone Nebula* Straight Ascension: 06h 41m 6s; Declination: + 09 ° 53m 0s; Distance: 2700 to; Radio: 4 to; Constellation: Monoceros"</item>
+    </string-array>
+    <string-array name="ind_18_desc">
+        <item>"Rosette Nebula* straight Ascension: 06h 33m 45s; Declination: + 04 ° 59m 54s; Distance: 5,000 al (1600 parsecs); Radio: 65 to; Constellation: Monoceros"</item>
+        <item>"Omega Centauri * straight Ascension: 13h 26m 45.89s; Declination -47 ° 28m 36.7s; Distance: 18300 ± 1000 each; Radio: 97 ± 6 to; Constellation: Centaurus"</item>
+        <item>"Cave Nebula* straight Ascension: 22h 57m 17,14s; Declination: + 62 ° 28m 33,4s; Distance: 2,400 to; Radio: 35 a; Constellation: Cepheus"</item>
+        <item>"Eagle Nebula* straight Ascension: 18h 18m 48s; Declination -13 ° 49m; Distance: 5,700 al (1750 parsecs); Radio: 70 x 55 in; Constellation: Serpens"</item>
+        <item>"Lagoon Nebula*straight Ascension: 18h 03m 37s; Declination -24 ° 23m 12s; Distance: 5,000 to; Radio: 70 × 30 to; Constellation: Sagittarius"</item>
+    </string-array>
+    <string-array name="ind_19_desc">
+        <item>"Dwarf Galaxy Leo II * straight Ascension: 11h 13m 29.2s; Declination: + 22 ° 09m 17s; Distance: 690 ± 70 thousand to; Radio: 2100 approx; Constellation: Leo"</item>
+        <item>"Tarantula Nebula*straight Ascension: 05h 38m 38s; Declination: -69 ° 05.7m; Distance: 170,000 light years; Radio: 500 a; Constellation: Dorado"</item>
+    </string-array>
+    <string-array name="ind_20_desc">
+        <item>"Large Magellanic Cloud * straight Ascension: 05h 23m 34,5s; Declination -69 ° 45m 11s; Distance: 136.000 al; Radio: 1,900; Constellation: Dorado / Mensa"</item>
+        <item>"Small Magellanic Cloud * straight Ascension: 00h 52m 44.8s; Declination -72 ° 49m 43s; Distance: 197 ± 9 kly (61 ± 3 kpc) Constellation: Tucana"</item>
+        <item>"Sagittarius dwarf galaxy *straight Ascension: 18h 55m 19.5s, declination -30 ° 32m 43s; Distance: 70 ± 7 thousand to; Radio: 5000 to; Constellation: Sagittarius"</item>
+        <item>"Canes Venatici dwarf galaxy * straight Ascension: 13h; Declination: + 40 °; area: 38 465 square degrees Rank"</item>
+    </string-array>
+    <string-array name="ind_21_desc">
+        <item>"Messier 101 * straight Ascension: 14h 03m 12.6s; Declination: + 54 ° 20m 57s; Distance: 27 Mal; Constellation: Ursa Major"</item>
+        <item>"Galaxy hat*straight Ascension: 12,0h 40,0m; Declination -11 ° 37m; Distance: 28 million; Radio: Between 25,000 and 70,000; Constellation: Virgo"</item>
+        <item>"Galaxy triangle*straight Ascension: 01h 33m 50,9s; Declination: + 30 ° 39m 37s; Distance: 2.8 million to; Radio: 25,000; Constellation: Triangulum"</item>
+        <item>"The Milky Way * Absolute Magnitude: -20.5; Radio: 15,330 pc, 50,000; Crust: 10 ^ 12 solar masses; width: 100,000; Distance: light 27,700 years"</item>
+        <item>"Andromeda * straight Ascension: 00h 42m 44,3s; Declination: + 41 ° 16m 09s; Distance: 2.5m at (2.4 * 1019 km); Radio: 110,000; Constellation: Andromeda"</item>
+    </string-array>
+    <string-array name="ind_22_desc">
+        <item>"Galaxy IC 1011 * Apparent magnitude: 14.7; Distance: 100 and 120 Megaparsecs; Age: 12.95 billion years; Size: 6 million to"</item>
+    </string-array>
+    <string-array name="ind_23_desc">
+        <item>"Virgo Cluster*straight Ascension: 12h 27m, Declination: + 12 ° 43m; brighter Member: Messier 49, Redshift: 0.0036; Constellation: Virgo and Coma Berenices"</item>
+        <item>"Abell 2029 * Width: 5.6 to 6 billion light years distance: 1.070 million to; Constellation: Serpens"</item>
+        <item>"Local Group* Galaxies: 44; Weight Approx: 700.000 million solar masses"</item>
+    </string-array>
+    <string-array name="ind_24_desc">
+        <item>"Virgo Supercluster * Length: 33 megaparsecs; Diameter: 200 million to; Total weight: 10 ^ 15 solar masses;"</item>
+    </string-array>
+    <string-array name="ind_25_desc">
+        <item>"Pisces-Cetus Supercluster Complex * Length: up to 1000 million; width: 150 million light years; Total weight: 10 ^ 18 solar masses"</item>
+    </string-array>
+    <string-array name="ind_26_desc">
+        <item>"Known Universe * Radio: 1.37 x 10 ^ 26 m Volume: 1.09 x 10 ^ 79 m ^ 3, Mass: 9.27 x 10 ^ 52 kg, mass-energy density: 8.46 x 10 ^ - 27 kg / m ^ 3"</item>
+    </string-array>
 
 
 </resources>
