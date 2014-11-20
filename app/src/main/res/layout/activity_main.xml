@@ -7,19 +7,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:layout_gravity="center"
         android:adjustViewBounds="false"
-        android:background="@android:color/black" />
+        android:background="@drawable/ic_launcher" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|bottom"
-        android:text="@string/app_name"
-        android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="100sp" />
 </FrameLayout>
